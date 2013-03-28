@@ -1,0 +1,52 @@
+#footer.large-12.columns
+  #about.section-container.accordion{ :'data-section' => '' }
+
+    -# == About project ========================================================
+
+    %section#about-project.section
+
+      %p#about-project-title-wrp.title.go-to-bottom
+        %a#about-project-title{ :href => '#' }
+          %i.general.foundicon-website.go-to-bottom About the project
+
+      #about-project-content-wrp.content
+        #about-project-content.panel
+          .row.full-width
+
+            #about-project-info-wrp.large-5.columns
+              = render 'partials/footer/about_project_info'
+
+            #about-project-contribute-wrp.large-7.columns
+              = render 'partials/footer/about_project_contribute'
+
+    -# == About contributors ===================================================
+
+    %section#about-contributors.section
+
+      %p#about-contributors-title-wrp.title.go-to-bottom
+        %a#about-contributors-title{ :href => '#' }
+          %i.general.foundicon-heart.go-to-bottom
+            About Author /
+            %span.has-tip.tip-top{ :'data-width' => '210', :title => 'Many thanks to all contributors!' } Contributors
+
+      #about-contributors-content-wrp.content
+        #about-contributors-content.panel
+          .row.full-width
+
+            #about-contributors-listing-wrp.large-12.columns
+              = render 'partials/footer/about_contributors_listing'
+
+    -# == About links ==========================================================
+
+    %section#about-links.section
+
+      %p#about-links-title-wrp.title.go-to-bottom
+        %a#about-links-title{:href => "#"}
+          %i.general.foundicon-cloud.go-to-bottom Some links
+
+      #about-links-content-wrp.content
+        #about-links-content.panel
+          .row.full-width
+
+            #about-links-useful-wrp.large-12.columns
+              = render 'partials/footer/about_links_useful'

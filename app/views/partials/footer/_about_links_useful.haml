@@ -1,0 +1,4 @@
+#about-links-useful
+  - @kb.ask(:links)[:useful].each do |link|
+    %li
+      %a{:href => link[:url]}= link[:title]

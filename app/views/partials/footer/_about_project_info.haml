@@ -1,0 +1,12 @@
+#about-project-info
+
+  -# == About the project - Info - Copyright ===================================
+  %p#about-project-info-copyright
+    Copyright ©
+    = Time.now.strftime('%Y') + @kb.ask(:author)[:name] + '. All rights reserved'
+
+  -# == About the project - Info - License =====================================
+  %p#about-project-info-license
+    All of the content is released under the
+    %a{ :href => @kb.ask(:website_info)[:license][:website] }
+      %span.label= @kb.ask(:website_info)[:license][:name] + ' license'

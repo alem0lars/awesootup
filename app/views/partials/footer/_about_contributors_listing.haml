@@ -1,0 +1,42 @@
+%table#about-contributors-listing.large-12
+
+  %thead#about-contributors-listing-header
+    %tr
+      %th Name
+      %th Contact
+      %th Contributions
+
+  %tbody#about-contributors-listing-body
+
+    -# == Author contributions =================================================
+
+    %tr
+      %td
+        %h6
+          %a{ :href => @kb.ask(:author)[:website] }= @kb.ask(:author)[:name]
+      %td
+        %a{ :href => "mailto:#{@kb.ask(:author)[:email]}" }
+          = @kb.ask(:author)[:email]
+      %td
+        %span.success.label= @kb.ask(:author)[:role]
+
+    -# == Contributors contributions ===========================================
+
+    - @kb.ask(:contributors)[:listing].each do |contributor|
+      %tr
+        %td
+          - if contributor.has_key?(:website)
+            %h6
+              %a{:href => contributor[:website]}= contributor[:name]
+          - else
+            %h6= contributor[:name]
+        %td
+          - if contributor.has_key?(:email)
+            %a{:href => "mailto:#{contributor[:email]}"}= contributor[:email]
+          - else
+            = '---'
+        %td
+          - if contributor.has_key?(:contribution)
+            %span= contributor[:contribution]
+          - else
+            = '---'

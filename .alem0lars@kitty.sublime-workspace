@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"index"
+			],
+			[
+				"commi",
+				"commit_msg"
+			],
+			[
+				"ver",
+				"verbose"
+			],
+			[
 				"fi",
 				"firefox"
 			]
@@ -132,6 +144,44 @@
 	},
 	"file_history":
 	[
+		"/usr/local/archive/projects/awesootup/app/views/homepages/index.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/layouts/application.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/head.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/js-imports.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/html-fragments.html.erb",
+		"/usr/local/archive/projects/awesootup/app/models/homepage.rb",
+		"/usr/local/archive/projects/awesootup/app/helpers/homepages_helper.rb",
+		"/usr/local/archive/projects/awesootup/app/controllers/homepages_controller.rb",
+		"/usr/local/archive/projects/awesootup/app/views/homepages/show/full.html.erb",
+		"/usr/local/archive/projects/awesootup/config/routes.rb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/chrome-frame.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/js-in-head.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/html-head.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/header.html.erb",
+		"/home/alem0lars/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
+		"/usr/local/archive/projects/awesootup/config/environment.rb",
+		"/usr/local/archive/projects/awesootup/Gemfile",
+		"/usr/local/archive/projects/awesootup/.gitignore",
+		"/usr/local/archive/projects/awesootup/lib/tasks/vcs.rake",
+		"/usr/local/archive/projects/genesis/lib/genesis.rb",
+		"/usr/local/archive/projects/awesootup/config.ru",
+		"/usr/local/archive/projects/awesootup/Gemfile.lock",
+		"/usr/local/archive/projects/awesootup/README.rdoc",
+		"/usr/local/archive/projects/awesootup/config/locales/en.yml",
+		"/usr/local/archive/projects/awesootup/config/boot.rb",
+		"/usr/local/archive/projects/awesootup/app/mailers/.gitkeep",
+		"/usr/local/archive/projects/awesootup/app/helpers/application_helper.rb",
+		"/usr/local/archive/projects/awesootup/app/controllers/application_controller.rb",
+		"/usr/local/archive/projects/awesootup/app/assets/images/rails.png",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/javascripts/application.js",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css",
+		"/usr/local/archive/projects/awesootup/config/database.yml",
+		"/usr/local/archive/projects/awesootup/lib/tasks/heroku.rake",
+		"/usr/local/archive/projects/awesootup/Rakefile",
+		"/usr/local/archive/projects/awesootup/.ruby-version",
+		"/usr/local/archive/projects/awesootup/.rvmrc",
 		"/usr/local/archive/projects/reference/awesootup/layouts/partials/header.html.erb",
 		"/usr/local/archive/projects/reference/awesootup/layouts/default.html.erb",
 		"/usr/local/archive/projects/reference/awesootup/content/assets/scripts/app.js",
@@ -155,7 +205,6 @@
 		"/home/alem0lars/.config/sublime-text-2/Packages/User/Gist.sublime-settings",
 		"/home/alem0lars/.config/sublime-text-2/Packages/Gist/Gist.sublime-settings",
 		"/home/alem0lars/.config/sublime-text-2/Packages/DocBlockr/Base File.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
 		"/home/alem0lars/tmp/asd",
 		"/home/alem0lars/.config/sublime-text-2/Packages/User/ApplySyntax.sublime-settings",
 		"/home/alem0lars/.config/sublime-text-2/Packages/User/SublimeLinter.sublime-settings",
@@ -191,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"slow",
 			"data",
 			"data-selectTab",
 			"selectTab",

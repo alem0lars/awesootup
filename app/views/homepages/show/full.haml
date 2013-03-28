@@ -1,0 +1,123 @@
+- content_for(:title) { 'Homepage' }
+
+
+#main.large-12.columns.page-index
+
+  -# == Presentation ===========================================================
+
+  #presentation-wrp.row
+    #presentation.large-12.columns
+      .panel.rounded
+
+        -# == Logo & Title =====================================================
+
+        .row
+          #logo-wrp.large-5.columns
+            = image_tag 'logo.svg', :id => 'logo'
+          #title-wrp.large-7.columns
+            %h1#title= @kb.ask(:website_info)[:title]
+
+        -# == Description ======================================================
+
+        .row
+          .large-8.columns.centered
+            %h3#description.subheader= @kb.ask(:website_info)[:motto]
+
+  %hr
+
+  -# == Informations ===========================================================
+
+  #info-wrp.row
+    #info
+
+      -# == Features ===========================================================
+
+      #features-wrp.large-7.columns
+        #features.panel.rounded
+
+          %h4#features-title Features
+
+          %ul#features-items
+            %li#feature-modularity.feature-item
+              %strong#feature-modularity-title.feature-title
+                Modularity is the keyword for a lot of possibilities
+
+              %ul#feature-modularity-content.feature-content
+
+                %li
+                  Start with the
+                  %a.scroll-to.select-tab{ :'data-scroll-to' => 'awesootupbuilder-wrp', :'data-select-tab' => 'awesootupbuilder-standalone-title', :href => 'javascript:void(0)' }
+                    %span.label standalone
+                  awesootup
+
+                %li
+                  Start with a
+                  %a.scroll-to.select-tab{ :'data-scroll-to' => 'awesootupbuilder-wrp', :'data-select-tab' => 'awesootupbuilder-popular-title', :href => 'javascript:void(0)' }
+                    %span.label popular
+                  awesootup
+
+                %li
+                  Create your
+                  %a.scroll-to.select-tab{ :'data-scroll-to' => 'awesootupbuilder-wrp', :'data-select-tab' => 'awesootupbuilder-custom-title', :href => 'javascript:void(0)' }
+                    %span.label custom
+                  awesootup, by selecting the desired modules
+
+      -# == News ===============================================================
+
+      #news-wrp.large-5.columns
+        #news.panel.rounded
+          %h4#news-title News
+
+  %hr
+
+  -# == AwesootupBuilder =======================================================
+  #awesootupbuilder-wrp.row
+    #awesootupbuilder.large-12.columns
+      .panel.rounded
+        %h4#awesootupbuilder-title Awesootup Builder
+        .section-container{ :'data-section' => '' }
+
+          -# == AwesootupBuilder Standalone ====================================
+
+          %section#awesootup-builder-standalone.section
+
+            %p#awesootup-builder-standalone-title-wrp.title
+              %a#awesootupbuilder-standalone-title{ :href => '#awesootupbuilder-standalone' }
+                %i.general.foundicon-checkmark Standalone
+
+            #awesootup-builder-standalone-content.content
+              .row
+                .large-8.columns
+                  %h5
+                    The standalone awesootup is the classic one, containing all
+                    of the basic modules, featuring a complete setup.
+                .large-4.columns
+                  %a#start-standalone-awesootup.radius.button Start now
+
+              %hr
+
+              These are the selected modules:
+              / Here will be inserted the standalone awesootup widget
+
+          -# == AwesootupBuilder Popular =======================================
+
+          %section#awesootup-builder-popular.section
+
+            %p#awesootup-builder-popular-title-wrp.title
+              %a#awesootupbuilder-popular-title{ :href => "#awesootupbuilder-popular" }
+                %i.general.foundicon-star Popular
+
+            #awesootup-builder-popular-content.content
+              The following awesootups are the most popular ones:
+
+          -# == AwesootupBuilder Custom ========================================
+
+          %section#awesootup-builder-custom.section
+
+            %p#awesootup-builder-custom-title-wrp.title
+              %a#awesootupbuilder-custom-title{:href => "#awesootupbuilder-custom"}
+                %i.general.foundicon-tools   Custom
+
+            #awesootup-builder-custom-content.content
+              Create your custom awesootup by selecting the desired modules and
+              by placing them in your desired order:
