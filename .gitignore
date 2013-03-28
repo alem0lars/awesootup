@@ -10,3 +10,11 @@
 
 # Ignore the database configuration (it's machine configuration dependent)
 /config/database.yml
+
+# IntellijIDEA
+/*.iml
+/.idea
+
+# SublimeText
+/*.sublime-project
+/*.sublime-workspace

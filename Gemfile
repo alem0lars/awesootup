@@ -7,6 +7,9 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+# Interactive console
+gem 'highline'
+
 # Gems used only for assets and not required in production envs by default
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
