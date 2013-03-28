@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"basi",
+				"basic_name"
+			],
+			[
+				"creat",
+				"create_unless_exists"
+			],
+			[
+				"content",
+				"content_for"
+			],
+			[
 				"in",
 				"index"
 			],
@@ -23,15 +35,43 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/homepages/show/full.haml",
+			"settings":
+			{
+				"buffer_size": 4279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/tasks/bootstrap/knowledge_base.rb",
+			"settings":
+			{
+				"buffer_size": 3489,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/application_helper.rb",
+			"settings":
+			{
+				"buffer_size": 367,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 76.0,
+		"height": 98.0,
 		"selected_items":
 		[
 			[
 				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
 				"Package Control: Install Package"
 			],
 			[
@@ -69,10 +109,6 @@
 			[
 				"find",
 				"FindKeyConflicts: All Conflicts"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
 			],
 			[
 				"push",
@@ -127,7 +163,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 474.0
+		"width": 588.0
 	},
 	"console":
 	{
@@ -144,15 +180,63 @@
 	},
 	"file_history":
 	[
-		"/usr/local/archive/projects/awesootup/app/views/homepages/index.html.erb",
+		"/usr/local/archive/projects/awesootup/lib/tasks/bootstrap.rake",
+		"/usr/local/archive/projects/awesootup/Gemfile",
+		"/usr/local/archive/projects/awesootup/lib/tasks/bootstrap/knowledge_base.rb",
+		"/usr/local/archive/projects/awesootup/app/views/layouts/application.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_html_fragments.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_js_imports.haml",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css",
+		"/usr/local/archive/projects/awesootup/app/assets/javascripts/application.js",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.scss",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_menu_top.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_footer.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_contributors_listing.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_links_useful.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_contribute.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_info.haml",
+		"/usr/local/archive/projects/awesootup/app/views/homepages/show/full.haml",
+		"/usr/local/archive/projects/awesootup/app/assets/images/logo.svg",
+		"/usr/local/archive/projects/awesootup/app/models/knowledge_base.rb",
+		"/usr/local/archive/projects/awesootup/app/controllers/application_controller.rb",
+		"/usr/local/archive/projects/awesootup/app/controllers/homepages_controller.rb",
+		"/usr/local/archive/projects/awesootup/app/helpers/homepages_helper.rb",
+		"/usr/local/archive/projects/awesootup/app/helpers/application_helper.rb",
+		"/usr/local/archive/projects/awesootup/app/models/homepage.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328142922_create_knowledge_bases.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328112424_create_homepages.rb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_contributors_listing.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_links_useful.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_contribute.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_info.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_top_menu.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_top_menu.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_js_imports.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_html_fragments.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_footer.html.erb",
 		"/usr/local/archive/projects/awesootup/app/views/layouts/application.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_useful_links.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/about-project-contribute.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_footer.html",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_footer.html.haml",
+		"/usr/local/archive/projects/awesootup/app/views/homepages/show/full.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_js-imports.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_html-fragments.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_top-menu.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/top-menu.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer.html.erb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/head.html.erb",
+		"/usr/local/archive/projects/awesootup/Rakefile",
+		"/usr/local/archive/projects/awesootup/README.rdoc",
+		"/usr/local/archive/projects/awesootup/LICENSE.md",
+		"/usr/local/archive/projects/awesootup/app/views/homepages/index.html.erb",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/homepages.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/javascripts/homepages.js.coffee",
+		"/usr/local/archive/projects/awesootup/app/assets/javascripts/application.js.coffee",
 		"/usr/local/archive/projects/awesootup/app/views/partials/js-imports.html.erb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/html-fragments.html.erb",
-		"/usr/local/archive/projects/awesootup/app/models/homepage.rb",
-		"/usr/local/archive/projects/awesootup/app/helpers/homepages_helper.rb",
-		"/usr/local/archive/projects/awesootup/app/controllers/homepages_controller.rb",
-		"/usr/local/archive/projects/awesootup/app/views/homepages/show/full.html.erb",
 		"/usr/local/archive/projects/awesootup/config/routes.rb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/chrome-frame.html.erb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/js-in-head.html.erb",
@@ -160,26 +244,17 @@
 		"/usr/local/archive/projects/awesootup/app/views/partials/header.html.erb",
 		"/home/alem0lars/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
 		"/usr/local/archive/projects/awesootup/config/environment.rb",
-		"/usr/local/archive/projects/awesootup/Gemfile",
 		"/usr/local/archive/projects/awesootup/.gitignore",
 		"/usr/local/archive/projects/awesootup/lib/tasks/vcs.rake",
 		"/usr/local/archive/projects/genesis/lib/genesis.rb",
 		"/usr/local/archive/projects/awesootup/config.ru",
 		"/usr/local/archive/projects/awesootup/Gemfile.lock",
-		"/usr/local/archive/projects/awesootup/README.rdoc",
 		"/usr/local/archive/projects/awesootup/config/locales/en.yml",
 		"/usr/local/archive/projects/awesootup/config/boot.rb",
 		"/usr/local/archive/projects/awesootup/app/mailers/.gitkeep",
-		"/usr/local/archive/projects/awesootup/app/helpers/application_helper.rb",
-		"/usr/local/archive/projects/awesootup/app/controllers/application_controller.rb",
 		"/usr/local/archive/projects/awesootup/app/assets/images/rails.png",
-		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation_and_overrides.scss",
-		"/usr/local/archive/projects/awesootup/app/assets/javascripts/application.js",
-		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.scss",
-		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css",
 		"/usr/local/archive/projects/awesootup/config/database.yml",
 		"/usr/local/archive/projects/awesootup/lib/tasks/heroku.rake",
-		"/usr/local/archive/projects/awesootup/Rakefile",
 		"/usr/local/archive/projects/awesootup/.ruby-version",
 		"/usr/local/archive/projects/awesootup/.rvmrc",
 		"/usr/local/archive/projects/reference/awesootup/layouts/partials/header.html.erb",
@@ -229,7 +304,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 92.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/usr/local/archive/projects/reference/awesootup/content"
@@ -240,6 +315,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"get",
+			"large",
 			"slow",
 			"data",
 			"data-selectTab",
@@ -269,8 +346,495 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/homepages/show/full.haml",
+					"settings":
+					{
+						"buffer_size": 4279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1370,
+								1370
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"live_git_annotations": true,
+							"pep8": true,
+							"pep8_ignore":
+							[
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": true,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "lib/tasks/bootstrap/knowledge_base.rb",
+					"settings":
+					{
+						"buffer_size": 3489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1590,
+								1590
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"live_git_annotations": true,
+							"pep8": true,
+							"pep8_ignore":
+							[
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": true,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 930.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "app/helpers/application_helper.rb",
+					"settings":
+					{
+						"buffer_size": 367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"live_git_annotations": true,
+							"pep8": true,
+							"pep8_ignore":
+							[
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": true,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -291,16 +855,36 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.57464028777,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.564950980392,
 			1.0
 		]
 	},
@@ -334,6 +918,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 282.0,
+	"side_bar_width": 328.0,
 	"status_bar_visible": true
 }

@@ -12,8 +12,7 @@
         -# == Logo & Title =====================================================
 
         .row
-          #logo-wrp.large-5.columns
-            = image_tag 'logo.svg', :id => 'logo'
+          #logo-wrp.large-5.columns= image_tag 'logo.svg', :id => 'logo'
           #title-wrp.large-7.columns
             %h1#title= @kb.ask(:website_info)[:title]
 
@@ -35,38 +34,39 @@
       #features-wrp.large-7.columns
         #features.panel.rounded
 
-          %h4#features-title Features
+          %h4#features-title= @kb.ask(:website_content)[:features][:title]
 
           %ul#features-items
-            %li#feature-modularity.feature-item
-              %strong#feature-modularity-title.feature-title
-                Modularity is the keyword for a lot of possibilities
 
-              %ul#feature-modularity-content.feature-content
+            - @kb.ask(:website_content)[:features][:listing].each do |feature|
+              - basic_class = 'feature'
+              - basic_id = "#{basic_class}-#{feature[:id]}"
 
-                %li
-                  Start with the
-                  %a.scroll-to.select-tab{ :'data-scroll-to' => 'awesootupbuilder-wrp', :'data-select-tab' => 'awesootupbuilder-standalone-title', :href => 'javascript:void(0)' }
-                    %span.label standalone
-                  awesootup
+              -# Feature
+              %li{ :id => basic_id, :class => basic_class }
 
-                %li
-                  Start with a
-                  %a.scroll-to.select-tab{ :'data-scroll-to' => 'awesootupbuilder-wrp', :'data-select-tab' => 'awesootupbuilder-popular-title', :href => 'javascript:void(0)' }
-                    %span.label popular
-                  awesootup
+                -# Feature title
+                %strong{ :id => "#{basic_id}-title", :class => "#{basic_class}-title" }= feature[:title]
 
-                %li
-                  Create your
-                  %a.scroll-to.select-tab{ :'data-scroll-to' => 'awesootupbuilder-wrp', :'data-select-tab' => 'awesootupbuilder-custom-title', :href => 'javascript:void(0)' }
-                    %span.label custom
-                  awesootup, by selecting the desired modules
+                -# Feature content
+                != typed_content(feature[:type], feature[:content], basic_id, basic_class)
 
       -# == News ===============================================================
 
       #news-wrp.large-5.columns
         #news.panel.rounded
-          %h4#news-title News
+
+          %h4#news-title= @kb.ask(:website_content)[:news][:title]
+
+          %ul#news-items
+            - @kb.ask(:website_content)[:news][:listing].each do |news_item|
+              %li.news-item
+                - if news_item.is_a?(Hash)
+                  %dl
+                    %dt= news_item[:title]
+                    %dd= news_item[:content]
+                - else
+                  = news_item
 
   %hr
 
