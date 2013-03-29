@@ -10,13 +10,14 @@
           %i.general.foundicon-website.go-to-bottom About the project
 
       #about-project-content-wrp.content
-        #about-project-content.panel
-          .row.full-width
+        #about-project-content
 
-            #about-project-info-wrp.large-5.columns
+          .row.full-width
+            #about-project-info-wrp.large-12.columns
               = render 'partials/footer/about_project_info'
 
-            #about-project-contribute-wrp.large-7.columns
+          .row.full-width
+            #about-project-contribute-wrp.large-12.columns
               = render 'partials/footer/about_project_contribute'
 
     -# == About contributors ===================================================
@@ -30,9 +31,9 @@
             %span.has-tip.tip-top{ :'data-width' => '210', :title => 'Many thanks to all contributors!' } Contributors
 
       #about-contributors-content-wrp.content
-        #about-contributors-content.panel
-          .row.full-width
+        #about-contributors-content
 
+          .row.full-width
             #about-contributors-listing-wrp.large-12.columns
               = render 'partials/footer/about_contributors_listing'
 
@@ -45,8 +46,8 @@
           %i.general.foundicon-cloud.go-to-bottom Some links
 
       #about-links-content-wrp.content
-        #about-links-content.panel
-          .row.full-width
+        #about-links-content
 
-            #about-links-useful-wrp.large-12.columns
+          .row.full-width
+            #about-links-listing-wrp.large-12.columns
               = render 'partials/footer/about_links_useful'

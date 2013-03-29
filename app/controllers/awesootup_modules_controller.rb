@@ -1,0 +1,2 @@
+class AwesootupModulesController < ApplicationController
+end

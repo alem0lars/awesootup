@@ -1,2 +1,10 @@
-//= require foundation_and_overrides
-//= require homepages
+/*
+ *
+ *= require active_admin
+ *
+ *= require foundation_all
+ *= require layout_all
+ *
+ *= require homepages
+ *
+ */

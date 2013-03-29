@@ -1,4 +1,39 @@
-#about-links-useful
-  - @kb.ask(:links)[:useful].each do |link|
-    %li
-      %a{:href => link[:url]}= link[:title]
+#about-links-listing
+
+  -# == About links - Listing ==================================================
+
+  #about-links-useful-wrp.large-6.columns
+    .panel
+
+      -# == About links - Useful ===============================================
+
+      #about-links-useful
+
+        -# == About links - Useful - Title =====================================
+
+        %h5#about-links-project-title= @kb.ask(:about)[:links][:useful][:title]
+
+        -# == About links - Useful - Content ===================================
+
+        %ul#about-links-project-content
+          - @kb.ask(:links)[:useful].each do |link|
+            %li
+              %a{:href => link[:url]}= link[:title]
+
+  #about-links-project-wrp.large-6.columns
+    .panel
+
+      -# == About links - Project ==============================================
+
+      #about-links-project
+
+        -# == About links - Project - Title ====================================
+
+        %h5#about-links-project-title= @kb.ask(:about)[:links][:project][:title]
+
+        -# == About links - Project - Content ==================================
+
+        %ul#about-links-project-content
+          - @kb.ask(:links)[:project].each do |_, link|
+            %li
+              %a{:href => link[:url]}= link[:title]

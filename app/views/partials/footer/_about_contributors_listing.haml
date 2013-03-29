@@ -2,9 +2,8 @@
 
   %thead#about-contributors-listing-header
     %tr
-      %th Name
-      %th Contact
-      %th Contributions
+      - @kb.ask(:about)[:contributors][:titles].each do |title|
+        %th= title
 
   %tbody#about-contributors-listing-body
 

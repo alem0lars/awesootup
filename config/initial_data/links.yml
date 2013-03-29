@@ -1,0 +1,18 @@
+project:
+  fork:
+    title: 'Fork the project'
+    url: 'https://github.com/alem0lars/awesootup/fork_select'
+  pull:
+    title: 'Pull request'
+    url: 'https://github.com/alem0lars/awesootup/pull/new/master'
+  new_issue:
+    title: 'New Issue'
+    url: 'https://github.com/alem0lars/awesootup/issues/new'
+
+useful:
+  - title: 'Author homepage'
+    url: 'http://molarialessandro.info'
+  - title: 'Awesootup source code'
+    url: 'https://github.com/alem0lars/awesootup'
+  - title: 'Awesootup issues'
+    url: 'https://github.com/alem0lars/awesootup/issues'

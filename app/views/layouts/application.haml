@@ -40,13 +40,15 @@
     = yield :chrome_frame
 
     -# == Menu =================================================================
-    %header{ :id => 'menu-top-wrp', :class => 'row' }= render 'partials/menu_top'
+    %header{ :id => 'menu-top-wrp', :class => 'row' }
+      = render 'partials/menu_top'
 
     -# == Main content =========================================================
     #main-wrp.row= yield
 
     -# == Footer ===============================================================
-    %footer{ :id => 'footer-wrp', :class => 'row' }= render 'partials/footer'
+    %footer{ :id => 'footer-wrp', :class => 'row full-width' }
+      = render 'partials/footer'
 
     -# == Javascripts ==========================================================
     = javascript_include_tag 'application'

@@ -74,6 +74,9 @@ GEM
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
+    foundation-icons-sass-rails (2.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     haml (4.0.1)
       tilt
     haml-rails (0.4)
@@ -173,6 +176,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   debugger
+  foundation-icons-sass-rails
   haml
   haml-rails
   highline
@@ -183,4 +187,4 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
-  zurb-foundation (~> 4.0.0)
+  zurb-foundation (~> 4.0.9)

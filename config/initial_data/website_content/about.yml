@@ -1,0 +1,16 @@
+contributors:
+  titles:
+    - 'Name'
+    - 'Contact'
+    - 'Contributions'
+
+donation:
+  title: 'Make a donation'
+  subtitle: 'Feel free to make any donation you want by clicking the button below'
+  reason: 'Donations are entirely used to mantain the awesootup infrastructure'
+
+links:
+  useful:
+    title: Useful Links
+  project:
+    title: Project Links
