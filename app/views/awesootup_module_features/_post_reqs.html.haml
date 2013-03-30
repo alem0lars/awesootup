@@ -1,0 +1,8 @@
+%ul
+  - post_reqs.each do |post_req|
+    %li
+      - if post_req[:desc] && !post_req[:desc].empty?
+        %span{ :'data-tooltip' => '', :class => 'has-tip', :title => post_req[:desc] }
+          = post_req[:name]
+      - else
+        = post_req[:name]

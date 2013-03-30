@@ -1,8 +1,5 @@
 Awesootup::Application.routes.draw do
 
-  resources :awesootup_modules
-
-
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -10,5 +7,7 @@ Awesootup::Application.routes.draw do
   root :to => 'homepages#show', :name => 'full'
 
   resources :homepages, :only => [:show]
+
+  resources :awesootup_modules
 
 end

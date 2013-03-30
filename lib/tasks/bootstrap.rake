@@ -1,6 +1,10 @@
+# == Global variables ==========================================================
+
 initial_data_pth = Rails.root.join('config').join('initial_data')
 ext_name = 'yml'
 
+
+# == Utility functions =========================================================
 
 # Recursively convert keys to symbols
 def symbolize(obj)
@@ -13,6 +17,7 @@ def symbolize(obj)
   end
 end
 
+# == Tasks =====================================================================
 
 namespace :bootstrap do
 

@@ -1,0 +1,39 @@
+%h1 Available Awesootup Modules
+
+.section-container.accordion{ :'data-section' => 'accordion' }
+  - @awesootup_modules.each do |awesootup_module|
+    %section.section.awesootup-module
+      %p.title.awesootup-module-title
+        %a{ :href => '#' }= "\##{awesootup_module[:id]} #{awesootup_module[:name]}"
+      .content
+        .row
+          .large-6.columns
+            %h3.awesootup-module-name= awesootup_module[:name].capitalize
+          .large-6.columns
+            %ul.button-group
+              %li= link_to_alternatives(awesootup_module[:id], false)
+              %li= link_to_alternatives(awesootup_module[:id], true)
+              %li= link_to_equally_satisfied(awesootup_module[:id], false)
+              %li= link_to_equally_satisfied(awesootup_module[:id], true)
+        .row
+          - if awesootup_module.author.nil?
+            .large-12.columns.awesootup-module-description-wrp
+              %p.awesootup-module-description= awesootup_module[:desc]
+              = render_provides(awesootup_module.provides, :title => {:level => :h4, :text => 'Features provided'})
+              = render_pre_reqs(awesootup_module.pre_reqs, :title => {:level => :h4, :text => 'Features pre-required'})
+              = render_post_reqs(awesootup_module.post_reqs, :title => {:level => :h4, :text => 'Features post-required'})
+          - else
+            .large-7.columns.awesootup-module-description-wrp
+              %p.awesootup-module-description= awesootup_module[:desc]
+              = render_provides(awesootup_module.provides, :title => {:level => :h4, :text => 'Features provided'})
+              = render_pre_reqs(awesootup_module.pre_reqs, :title => {:level => :h4, :text => 'Features pre-required'})
+              = render_post_reqs(awesootup_module.post_reqs, :title => {:level => :h4, :text => 'Features post-required'})
+            .large-5.columns.awesootup-module-author-wrp.panel
+              %h4 Author
+              %dl.awesootup-module-author
+                %dt.awesootup-module-author-name-title Name
+                %dd.awesootup-module-author-name= awesootup_module.author[:name]
+                %dt.awesootup-module-author-email-title Email
+                %dd.awesootup-module-author-email= awesootup_module.author[:email] or '---'
+                %dt.awesootup-module-author-website-title Website
+                %dd.awesootup-module-author-website= awesootup_module.author[:website] or '---'

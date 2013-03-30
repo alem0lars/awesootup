@@ -1,0 +1,8 @@
+%ul
+  - pre_reqs.each do |pre_req|
+    %li
+      - if pre_req[:desc] && !pre_req[:desc].empty?
+        %span{ :'data-tooltip' => '', :class => 'has-tip', :title => pre_req[:desc] }
+          = pre_req[:name]
+      -else
+        = pre_req[:name]

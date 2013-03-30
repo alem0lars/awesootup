@@ -5,6 +5,12 @@ gem 'rails', '3.2.13'
 gem 'haml'
 gem 'jquery-rails'
 
+
+# Use PostgreSQL as DBMS
+gem 'pg'
+# Search using PostgreSQL full-text search
+gem 'pg_search'
+
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -28,18 +34,12 @@ group :assets do
 end
 
 group :test do
-  # Use SQLite for testing
-  gem 'sqlite3'
 end
 
 group :development do
   # Enable the debugger
   gem 'debugger'
-  # Use PostgreSQL in development
-  gem 'pg'
 end
 
 group :production do
-  # Use PostgreSQL in production
-  gem 'pg'
 end
