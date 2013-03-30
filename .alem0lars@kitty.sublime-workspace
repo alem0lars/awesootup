@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"contri",
+				"contributors"
+			],
+			[
 				"basi",
 				"basic_name"
 			],
@@ -35,30 +39,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/views/homepages/show/full.haml",
-			"settings":
-			{
-				"buffer_size": 4279,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/tasks/bootstrap/knowledge_base.rb",
-			"settings":
-			{
-				"buffer_size": 3489,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/helpers/application_helper.rb",
-			"settings":
-			{
-				"buffer_size": 367,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -180,32 +160,88 @@
 	},
 	"file_history":
 	[
-		"/usr/local/archive/projects/awesootup/lib/tasks/bootstrap.rake",
-		"/usr/local/archive/projects/awesootup/Gemfile",
-		"/usr/local/archive/projects/awesootup/lib/tasks/bootstrap/knowledge_base.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329175515_create_many_to_many_for_awesootup_module.rb",
+		"/usr/local/archive/projects/awesootup/app/models/awesootup_module_feature.rb",
+		"/usr/local/archive/projects/awesootup/app/models/awesootup_module.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329171618_create_authors.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329171824_create_awesootup_module_features.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329180357_add_author_id_to_awesootup_module.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329171108_remove_redundancy_from_awesootup_modules.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329170134_add_fields_to_awesootup_modules.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130329161656_create_awesootup_modules.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328193005_move_admin_notes_to_comments.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328193004_create_admin_notes.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328192959_devise_create_admin_users.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328142922_create_knowledge_bases.rb",
+		"/usr/local/archive/projects/awesootup/db/migrate/20130328112424_create_homepages.rb",
+		"/usr/local/archive/projects/awesootup/app/models/author.rb",
+		"/usr/local/archive/projects/reference/awesootup/content/markup/awesootup/modules/bootstrap/bootstrap_cfg.yaml",
+		"/usr/local/archive/projects/awesootup/app/admin/admin_user.rb",
+		"/usr/local/archive/projects/awesootup/doc/README_FOR_APP",
+		"/usr/local/archive/projects/awesootup/app/assets/javascripts/active_admin.js",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/awesootup_modules.css.scss",
 		"/usr/local/archive/projects/awesootup/app/views/layouts/application.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_menu_top.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_menu_top.html.erb",
+		"/usr/local/archive/projects/awesootup/Gemfile",
+		"/usr/local/archive/projects/awesootup/app/assets/javascripts/application.js",
+		"/usr/local/archive/projects/reference/awesootup/layouts/partials/header.html.erb",
+		"/usr/local/archive/projects/awesootup/app/views/homepages/show/full.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/_footer.haml",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/layout/_footer.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/layout_all.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/layout/_menu_top.css.scss",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_contribute.haml",
+		"/usr/local/archive/projects/awesootup/config/initial_data/links.yml",
+		"/usr/local/archive/projects/awesootup/config/initial_data/website_content/about.yml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_links_useful.haml",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_info.haml",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation/_settings.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation/_extensions.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/layout_import.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation_import.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/layout/_main.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/layout.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation.css.scss",
+		"/usr/local/archive/projects/reference/awesootup/content/assets/styles/app/_main.scss",
+		"/usr/local/archive/projects/reference/awesootup/content/assets/styles/app/_footer.scss",
+		"/usr/local/archive/projects/reference/awesootup/content/assets/styles/app/_header.scss",
+		"/usr/local/archive/projects/awesootup/app/helpers/application_helper.rb",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/active_admin.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation/foundation_and_overrides.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation/foundation_extensions.css.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation_extensions.css.scss",
+		"/usr/local/archive/projects/reference/awesootup/content/assets/styles/app/_foundation_extensions.scss",
+		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/foundation_and_overrides.css.scss",
+		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_contributors_listing.haml",
+		"/usr/local/archive/projects/awesootup/config/initial_data/website_content/features.yml",
+		"/usr/local/archive/projects/awesootup/lib/tasks/bootstrap.rake",
+		"/usr/local/archive/projects/awesootup/config/initial_data/guide_builder.yml",
+		"/usr/local/archive/projects/awesootup/config/initial_data/website_content/guide_builder.yml",
+		"/usr/local/archive/projects/awesootup/config/initial_data/news.yml",
+		"/usr/local/archive/projects/awesootup/config/initial_data/features.yml",
+		"/usr/local/archive/projects/awesootup/lib/tasks/bootstrap/knowledge_base.rb",
+		"/usr/local/archive/projects/awesootup/initial_data/website_info.yml",
+		"/usr/local/archive/projects/awesootup/initial_data/website_content/features.yml",
+		"/usr/local/archive/projects/awesootup/initial_data/author.yml",
+		"/usr/local/archive/projects/awesootup/initial_data/contributors.yml",
+		"/usr/local/archive/projects/awesootup/initial_data/links.yml",
+		"/usr/local/archive/projects/awesootup/initial_data/asd/qwe.yml",
+		"/usr/local/archive/projects/reference/awesootup/lib/db_loaders/global_cfg_loader.rb",
+		"/usr/local/archive/projects/reference/awesootup/lib/db_provider.rb",
+		"/usr/local/archive/projects/reference/awesootup/lib/db_provider/yaml_provider.rb",
+		"/usr/local/archive/projects/awesootup/initial_data",
 		"/usr/local/archive/projects/awesootup/app/views/partials/_html_fragments.haml",
 		"/usr/local/archive/projects/awesootup/app/views/partials/_js_imports.haml",
-		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css",
-		"/usr/local/archive/projects/awesootup/app/assets/javascripts/application.js",
 		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.css.scss",
 		"/usr/local/archive/projects/awesootup/app/assets/stylesheets/application.scss",
-		"/usr/local/archive/projects/awesootup/app/views/partials/_menu_top.haml",
-		"/usr/local/archive/projects/awesootup/app/views/partials/_footer.haml",
-		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_contributors_listing.haml",
-		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_links_useful.haml",
-		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_contribute.haml",
-		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_info.haml",
-		"/usr/local/archive/projects/awesootup/app/views/homepages/show/full.haml",
 		"/usr/local/archive/projects/awesootup/app/assets/images/logo.svg",
 		"/usr/local/archive/projects/awesootup/app/models/knowledge_base.rb",
 		"/usr/local/archive/projects/awesootup/app/controllers/application_controller.rb",
 		"/usr/local/archive/projects/awesootup/app/controllers/homepages_controller.rb",
 		"/usr/local/archive/projects/awesootup/app/helpers/homepages_helper.rb",
-		"/usr/local/archive/projects/awesootup/app/helpers/application_helper.rb",
 		"/usr/local/archive/projects/awesootup/app/models/homepage.rb",
-		"/usr/local/archive/projects/awesootup/db/migrate/20130328142922_create_knowledge_bases.rb",
-		"/usr/local/archive/projects/awesootup/db/migrate/20130328112424_create_homepages.rb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_contributors_listing.html.erb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_links_useful.html.erb",
 		"/usr/local/archive/projects/awesootup/app/views/partials/footer/_about_project_contribute.html.erb",
@@ -251,52 +287,7 @@
 		"/usr/local/archive/projects/awesootup/Gemfile.lock",
 		"/usr/local/archive/projects/awesootup/config/locales/en.yml",
 		"/usr/local/archive/projects/awesootup/config/boot.rb",
-		"/usr/local/archive/projects/awesootup/app/mailers/.gitkeep",
-		"/usr/local/archive/projects/awesootup/app/assets/images/rails.png",
-		"/usr/local/archive/projects/awesootup/config/database.yml",
-		"/usr/local/archive/projects/awesootup/lib/tasks/heroku.rake",
-		"/usr/local/archive/projects/awesootup/.ruby-version",
-		"/usr/local/archive/projects/awesootup/.rvmrc",
-		"/usr/local/archive/projects/reference/awesootup/layouts/partials/header.html.erb",
-		"/usr/local/archive/projects/reference/awesootup/layouts/default.html.erb",
-		"/usr/local/archive/projects/reference/awesootup/content/assets/scripts/app.js",
-		"/usr/local/archive/projects/reference/awesootup/content/assets/styles/app/_header.scss",
-		"/usr/local/archive/projects/reference/awesootup/layouts/partials/footer.html.erb",
-		"/usr/local/archive/projects/reference/awesootup/content/assets/styles/app/_main.scss",
-		"/usr/local/archive/projects/reference/awesootup/content/assets/scripts/app/moving.js",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-		"/usr/local/archive/projects/reference/awesootup/layouts/module.html.erb",
-		"/usr/local/archive/projects/reference/awesootup/layouts/partials/html-chromeframe.html.erb",
-		"/usr/local/archive/projects/reference/awesootup/layouts/partials/html-head.html.erb",
-		"/usr/local/archive/projects/reference/awesootup/Rules",
-		"/usr/local/archive/projects/reference/awesootup/lib/awesootup.rb",
-		"/usr/local/archive/projects/reference/awesootup/.gitignore",
-		"/usr/local/archive/projects/projr/source/markup/pages/details.erb",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/Emmet.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/Emmet/Emmet.sublime-settings",
-		"/usr/local/archive/projects/reference/awesootup/COMMIT_EDITMSG.COMMIT_EDITMSG",
-		"/home/alem0lars/tmp/COMMIT_EDITMSG.COMMIT_EDITMSG",
-		"/home/alem0lars/tmp/README",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/Gist.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/Gist/Gist.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/DocBlockr/Base File.sublime-settings",
-		"/home/alem0lars/tmp/asd",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/ApplySyntax.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/SublimeLinter.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/ApplySyntax/ApplySyntax.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/BracketHighlighter/bh_core.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/bh_core.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
-		"/home/alem0lars/.config/sublime-text-2/Packages/Git/Git.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/Git.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/User/Side Bar.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/Theme - Soda/README.md",
-		"/home/alem0lars/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/SublimeCodeIntel/Base File.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/SublimeLinter/README.md",
-		"/home/alem0lars/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
-		"/home/alem0lars/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings"
+		"/usr/local/archive/projects/awesootup/app/mailers/.gitkeep"
 	],
 	"find":
 	{
@@ -304,9 +295,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 92.0,
 		"where_history":
 		[
+			"/usr/local/archive/projects/awesootup",
 			"/usr/local/archive/projects/reference/awesootup/content"
 		]
 	},
@@ -315,6 +307,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[:project]",
+			"topbar-",
+			"website_content",
 			"get",
 			"large",
 			"slow",
@@ -346,329 +341,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/views/homepages/show/full.haml",
-					"settings":
-					{
-						"buffer_size": 4279,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1370,
-								1370
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README"
-							],
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"live_git_annotations": true,
-							"pep8": true,
-							"pep8_ignore":
-							[
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_mark_style": "fill",
-							"sublimelinter_notes": true,
-							"sublimelinter_objj_check_ascii": true,
-							"sublimelinter_popup_errors_on_save": true,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 495.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 1,
-					"file": "lib/tasks/bootstrap/knowledge_base.rb",
-					"settings":
-					{
-						"buffer_size": 3489,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1590,
-								1590
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README"
-							],
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"live_git_annotations": true,
-							"pep8": true,
-							"pep8_ignore":
-							[
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_mark_style": "fill",
-							"sublimelinter_notes": true,
-							"sublimelinter_objj_check_ascii": true,
-							"sublimelinter_popup_errors_on_save": true,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 930.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -677,164 +356,8 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 2,
-					"file": "app/helpers/application_helper.rb",
-					"settings":
-					{
-						"buffer_size": 367,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								25,
-								25
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README"
-							],
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"live_git_annotations": true,
-							"pep8": true,
-							"pep8_ignore":
-							[
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_mark_style": "fill",
-							"sublimelinter_notes": true,
-							"sublimelinter_objj_check_ascii": true,
-							"sublimelinter_popup_errors_on_save": true,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -878,13 +401,13 @@
 		"cols":
 		[
 			0.0,
-			0.57464028777,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.564950980392,
+			0.5,
 			1.0
 		]
 	},
@@ -918,6 +441,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 328.0,
+	"side_bar_width": 275.0,
 	"status_bar_visible": true
 }

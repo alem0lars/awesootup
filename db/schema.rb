@@ -62,32 +62,26 @@ ActiveRecord::Schema.define(:version => 20130329180357) do
   end
 
   create_table "awesootup_modules", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
     t.string   "name"
     t.text     "desc"
     t.integer  "author_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "awesootup_modules_post_reqs", :force => true do |t|
-    t.integer  "awesootup_module_id"
-    t.integer  "awesootup_module_feature_id"
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
+    t.integer "awesootup_module_id"
+    t.integer "awesootup_module_feature_id"
   end
 
   create_table "awesootup_modules_pre_reqs", :force => true do |t|
-    t.integer  "awesootup_module_id"
-    t.integer  "awesootup_module_feature_id"
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
+    t.integer "awesootup_module_id"
+    t.integer "awesootup_module_feature_id"
   end
 
   create_table "awesootup_modules_provides", :force => true do |t|
-    t.integer  "awesootup_module_id"
-    t.integer  "awesootup_module_feature_id"
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
+    t.integer "awesootup_module_id"
+    t.integer "awesootup_module_feature_id"
   end
 
   create_table "homepages", :force => true do |t|
