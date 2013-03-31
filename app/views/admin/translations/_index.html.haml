@@ -1,0 +1,38 @@
+-# == Translations listing =====================================================
+
+#translations-listing-wrp
+  %h2#translations-listing-title Translations listing
+  %ul#translations-listing
+    - if @translations.keys.empty?
+      %p No translations at the moment.
+    -else
+      %table.index_table
+        %thead
+          %tr
+            %th Locale
+            %th Name
+            %th Value
+            %th Actions
+        %tbody
+          - @translations.keys.each do |translation_key|
+            - locale, key = translation_key.split('.')
+            %tr
+              %td= locale
+              %td= key
+              %td= @translations[translation_key].gsub(/\["/, '').gsub(/"\]/, '')
+              %td
+                = link_to 'Delete', admin_translations_path(:delete => true, :key => key, :locale => locale)
+
+-# == Translation creation =====================================================
+
+#translations-new-wrp
+  %h2#translations-new-title Create a new translation
+  = form_tag(admin_translations_path, :class => 'formtastic') do
+    %fieldset.inputs
+      %ol
+        %li.input= text_field_tag :locale, nil, :placeholder => 'Locale'
+        %li.input= text_field_tag :key, nil, :placeholder => 'Translation name'
+        %li.input= text_field_tag :value, nil, :placeholder => 'Translation value'
+    %fieldset.actions
+      %ol
+        %li.action.input-action= submit_tag 'Create'

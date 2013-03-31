@@ -1,0 +1,38 @@
+#menu-top
+  .contain-to-grid
+    .fixed
+      %nav.top-bar
+
+        -# == Title Area =======================================================
+
+        %ul.title-area
+          %li.name
+            %h1= link_to(t('title'), '#')
+          %li.toggle-topbar.menu-icon
+            %a{ :href => '#' }
+              %span= t('title_menu_expand')
+
+        -# == Navigation =======================================================
+
+        %section.top-bar-section
+
+          -# == Left Navigation ================================================
+
+          %ul.left
+            %li
+              -# TODO change to dropdown
+              = link_to t('title_awesootup_modules'), awesootup_modules_path
+            %li
+              %ul.dropdown
+                %li
+                  %label= t('title_contribute')
+                %li= link_to(t('title_contribute_website_short'), contribute_path(:website))
+                %li= link_to(t('title_contribute_guides_short'), contribute_path(:guides))
+                %li= link_to(t('title_contribute_modules_short'), contribute_path(:modules))
+
+          -# == Right Navigation ===============================================
+
+          %ul.right
+
+            %li
+              = link_to t('title_about'), 'javascript:void(0)', :class => 'social foundicon-torso go-to-bottom trigger-click', :'data-trigger-click-target' => '#about-project-title'

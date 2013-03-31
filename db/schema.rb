@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130329180357) do
+ActiveRecord::Schema.define(:version => 20130331145641) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -54,6 +54,13 @@ ActiveRecord::Schema.define(:version => 20130329180357) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "awesootup_features", :force => true do |t|
+    t.string   "name"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "awesootup_module_features", :force => true do |t|
     t.string   "name"
     t.text     "desc"
@@ -84,14 +91,23 @@ ActiveRecord::Schema.define(:version => 20130329180357) do
     t.integer "awesootup_module_feature_id"
   end
 
-  create_table "homepages", :force => true do |t|
+  create_table "awesootup_news", :force => true do |t|
+    t.string   "name"
+    t.text     "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "knowledge_bases", :force => true do |t|
+  create_table "contributors", :force => true do |t|
     t.string   "name"
-    t.text     "value"
+    t.string   "email"
+    t.text     "website"
+    t.text     "contributions"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "homepages", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

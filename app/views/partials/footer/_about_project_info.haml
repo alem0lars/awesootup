@@ -5,14 +5,17 @@
     -# == About the project - Info - Copyright =================================
     #about-project-info-copyright-wrp
       %p#about-project-info-copyright
-        Copyright ©&nbsp
+        = t('copyright').capitalize
+        ©
         = Time.now.strftime('%Y')
-        %strong= @kb.ask(:author)[:name]
-        %em . All rights reserved
+        %strong= t('author_name')
+        %em
+        \.
+        = t('copyright_allrights')
 
     -# == About the project - Info - License ===================================
     #about-project-info-license-wrp
       %p#about-project-info-license
-        All of the content is released under the
-        %a{ :href => @kb.ask(:website_info)[:license][:website] }
-          %span.label= @kb.ask(:website_info)[:license][:name] + ' license'
+        = t('license_releasedunder')
+        %a{ :href => t('license_website') }
+          %span.label= "#{t('license_name')} #{t('license').downcase}"

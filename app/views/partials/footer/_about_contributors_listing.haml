@@ -2,8 +2,9 @@
 
   %thead#about-contributors-listing-header
     %tr
-      - @kb.ask(:about)[:contributors][:titles].each do |title|
-        %th= title
+      %th= t('title_contributorstable_name')
+      %th= t('title_contributorstable_contact')
+      %th= t('title_contributorstable_contributions')
 
   %tbody#about-contributors-listing-body
 
@@ -12,30 +13,29 @@
     %tr
       %td
         %h6
-          %a{ :href => @kb.ask(:author)[:website] }= @kb.ask(:author)[:name]
+          %a{ :href => t('author_website') }= t('author_name')
       %td
-        %a{ :href => "mailto:#{@kb.ask(:author)[:email]}" }
-          = @kb.ask(:author)[:email]
+        %a{ :href => "mailto:#{t('author_email')}" }= t('author_email')
       %td
-        %span.success.label= @kb.ask(:author)[:role]
+        %span.success.label= t('author_role')
 
     -# == Contributors contributions ===========================================
 
-    - @kb.ask(:contributors)[:listing].each do |contributor|
+    - @contributors.each do |contributor|
       %tr
         %td
-          - if contributor.has_key?(:website)
+          - if contributor.website
             %h6
-              %a{:href => contributor[:website]}= contributor[:name]
+              %a{:href => contributor.website}= contributor.name
           - else
-            %h6= contributor[:name]
+            %h6= contributor.name
         %td
-          - if contributor.has_key?(:email)
-            %a{:href => "mailto:#{contributor[:email]}"}= contributor[:email]
+          - if contributor.email
+            %a{:href => "mailto:#{contributor.email}"}= contributor.email
           - else
             = '---'
         %td
-          - if contributor.has_key?(:contribution)
-            %span= contributor[:contribution]
+          - if contributor.contribution
+            %span= contributor.contribution
           - else
             = '---'

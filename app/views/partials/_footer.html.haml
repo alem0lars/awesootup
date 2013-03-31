@@ -7,7 +7,7 @@
 
       %p#about-project-title-wrp.title.go-to-bottom
         %a#about-project-title{ :href => '#' }
-          %i.general.foundicon-website.go-to-bottom About the project
+          %i.general.foundicon-website.go-to-bottom= t('title_about_project')
 
       #about-project-content-wrp.content
         #about-project-content
@@ -27,8 +27,7 @@
       %p#about-contributors-title-wrp.title.go-to-bottom
         %a#about-contributors-title{ :href => '#' }
           %i.general.foundicon-heart.go-to-bottom
-            About Author /
-            %span.has-tip.tip-top{ :'data-width' => '210', :title => 'Many thanks to all contributors!' } Contributors
+            %span.has-tip.tip-top{ :'data-width' => '210', :title => t('title_about_contributors_comment') }= t('title_about_contributors')
 
       #about-contributors-content-wrp.content
         #about-contributors-content
@@ -42,8 +41,8 @@
     %section#about-links.section
 
       %p#about-links-title-wrp.title.go-to-bottom
-        %a#about-links-title{:href => "#"}
-          %i.general.foundicon-cloud.go-to-bottom Some links
+        %a#about-links-title{:href => '#'}
+          %i.general.foundicon-cloud.go-to-bottom= t('title_about_links')
 
       #about-links-content-wrp.content
         #about-links-content

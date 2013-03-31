@@ -1,4 +1,4 @@
-- content_for(:title) { 'Homepage' }
+- content_for(:title) { t('title_homepage') }
 
 
 #main.large-12.columns.page-index
@@ -14,13 +14,13 @@
         .row
           #logo-wrp.large-5.columns= image_tag 'logo.svg', :id => 'logo'
           #title-wrp.large-7.columns
-            %h1#title= @kb.ask(:website_info)[:title]
+            %h1#title= t('title')
 
         -# == Description ======================================================
 
         .row
           .large-8.columns.centered
-            %h3#description.subheader= @kb.ask(:website_info)[:motto]
+            %h3#description.subheader= t('motto')
 
   %hr
 
@@ -34,40 +34,34 @@
       #features-wrp.large-7.columns
         #features.panel.rounded
 
-          %h4#features-title= @kb.ask(:features)[:title]
+          #features-title-wrp
+            %h3#features-title.general.foundicon-idea= " #{t('title_features')}"
 
-          %ul#features-items
-
-            - @kb.ask(:features)[:listing].each do |feature|
-              - basic_class = 'feature'
-              - basic_id = "#{basic_class}-#{feature[:id]}"
-
-              -# Feature
-              %li{ :id => basic_id, :class => basic_class }
-
-                -# Feature title
-                %strong{ :id => "#{basic_id}-title", :class => "#{basic_class}-title" }= feature[:title]
-
-                -# Feature content
-                - if feature.has_key?(:content)
-                  != typed_content(feature[:type], feature[:content], basic_id, basic_class)
+          %dl#features-items
+            - @awesootup_features.each do |awesootup_feature|
+              .feature-item
+                - if awesootup_feature.content
+                  %dt.feature-item-title= awesootup_feature.name
+                  %dd.feature-item-content= awesootup_feature.content
+                - else
+                  %strong.feature-item-title= awesootup_feature.name
 
       -# == News ===============================================================
 
       #news-wrp.large-5.columns
         #news.panel.rounded
 
-          %h4#news-title= @kb.ask(:news)[:title]
+          #news-title-wrp
+            %h3#news-title.general.foundicon-flag= " #{t('title_news')}"
 
-          #news-items
-            - @kb.ask(:news)[:listing].each do |news_item|
-              .news-item-wrp
-                - if news_item.is_a?(Hash)
-                  %dl.news-item
-                    %dt.news-item-title= news_item[:title]
-                    %dd.news-item-content= news_item[:content]
+          %dl#news-items
+            - @awesootup_news.each do |awesootup_news_item|
+              .news-item
+                - if awesootup_news_item.content
+                  %dt.news-item-title= awesootup_news_item.name
+                  %dd.news-item-content= awesootup_news_item.content
                 - else
-                  %p.news-item= news_item
+                  %strong.news-item-title= awesootup_news_item.name
 
   %hr
 
@@ -75,7 +69,7 @@
   #guidebuilder-wrp.row
     #guidebuilder.large-12.columns
       .panel.rounded
-        %h4#guidebuilder-title= @kb.ask(:guide_builder)[:title]
+        %h4#guidebuilder-title= t('title_guidebuilder')
         .section-container.tabs{ :'data-section' => '' }
 
           -# == GuideBuilder Standalone ========================================
@@ -86,17 +80,17 @@
 
             %p#guidebuilder-standalone-title-wrp.title
               %a#guidebuilder-standalone-title{ :href => '#guidebuilder-standalone' }
-                %i.general.foundicon-checkmark
-                  = @kb.ask(:guide_builder)[:standalone][:title]
+                %i.general.foundicon-checkmark= " #{t('title_guidebuilder_standalone')}"
 
             -# == GuideBuilder Standalone - Content ============================
 
             #guidebuilder-standalone-content.content
               .row
                 .large-8.columns
-                  %h5= @kb.ask(:guide_builder)[:standalone][:subtitle]
+                  %h5= t('title_guidebuilder_standalone_subtitle')
                 .large-4.columns
-                  %a#start-standalone-guide.radius.button Start now
+                  %a#start-standalone-guide.radius.button
+                    = t('guidebuilder_start_button')
 
               %hr
 
@@ -110,17 +104,17 @@
 
             %p#guidebuilder-popular-title-wrp.title
               %a#guidebuilder-popular-title{ :href => '#guidebuilder-popular' }
-                %i.general.foundicon-star
-                  = @kb.ask(:guide_builder)[:popular][:title]
+                %i.general.foundicon-star= " #{t('title_guidebuilder_popular')}"
 
             -# == GuideBuilder Popular - Content ===============================
 
             #guidebuilder-popular-content.content
               .row
                 .large-8.columns
-                  %h5= @kb.ask(:guide_builder)[:popular][:subtitle]
+                  %h5= t('title_guidebuilder_popular_subtitle')
                 .large-4.columns
-                  %a#start-popular-guide.radius.button Start now
+                  %a#start-popular-guide.radius.button
+                    = t('guidebuilder_start_button')
 
           -# == GuideBuilder Custom ============================================
 
@@ -130,14 +124,14 @@
 
             %p#guidebuilder-custom-title-wrp.title
               %a#guidebuilder-custom-title{ :href => '#guidebuilder-custom' }
-                %i.general.foundicon-tools
-                  = @kb.ask(:guide_builder)[:custom][:title]
+                %i.general.foundicon-tools= " #{t('title_guidebuilder_custom')}"
 
             -# == GuideBuilder Custom - Content ================================
 
             #guidebuilder-custom-content.content
               .row
                 .large-8.columns
-                  %h5= @kb.ask(:guide_builder)[:custom][:subtitle]
+                  %h5= t('title_guidebuilder_custom_subtitle')
                 .large-4.columns
-                  %a#start-custom-guide.radius.button Start now
+                  %a#start-custom-guide.radius.button
+                    = t('guidebuilder_start_button')

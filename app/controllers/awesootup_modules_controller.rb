@@ -1,36 +1,37 @@
 class AwesootupModulesController < ApplicationController
 
   def index
+    @awesootup_modules = nil
+
     if params[:filtering] && params[:type]
-      case params[:type].to_sym
+      case params[:type].downcase.gsub(' ', '_').to_sym
         when :alternatives
           if params[:id]
-            params[:id] = params[:id].to_i
-            params[:strict] = params[:strict] == 'true'
-            if params[:strict]
-              @awesootup_modules = AwesootupModule.find(params[:id]).alternatives(true)
-            else
-              @awesootup_modules = AwesootupModule.find(params[:id]).alternatives
-            end
-          else
-            @awesootup_modules = AwesootupModule.all
+            @awesootup_modules = (params[:strict] == 'true') ?
+              AwesootupModule.find(params[:id].to_i).alternatives(true) :
+              AwesootupModule.find(params[:id].to_i).alternatives
           end
         when :equally_satisfied
           if params[:id]
-            params[:id] = params[:id].to_i
-            params[:strict] = params[:strict] == 'true'
-            if params[:strict]
-              @awesootup_modules = AwesootupModule.find(params[:id]).equally_satisfied(true)
-            else
-              @awesootup_modules = AwesootupModule.find(params[:id]).equally_satisfied
-            end
-          else
-            @awesootup_modules = AwesootupModule.all
+            @awesootup_modules = (params[:strict] == 'true') ?
+              AwesootupModule.find(params[:id].to_i).equally_satisfied(true) :
+              AwesootupModule.find(params[:id].to_i).equally_satisfied
+          end
+        when :search
+          if params[:search_value]
+            @awesootup_modules = AwesootupModule.search_simple(params[:search_value])
+          end
+        when :deep_search
+          if params[:search_value]
+            @awesootup_modules = AwesootupModule.search_deep(params[:search_value])
           end
       end
-    else
+    end
+
+    if @awesootup_modules.nil?
       @awesootup_modules = AwesootupModule.all
     end
+
   end
 
   def show

@@ -5,84 +5,36 @@
   .large-7.columns
     .panel
 
-      -# == Contribute for the website ===========================================
+      -# == Contribute for the website =========================================
 
       #about-project-contribute-website
 
-        %h5 Contribute for the website
-        %ul
-          %li
-            %a.social.foundicon-github{ :href => @kb.ask(:links)[:project][:fork][:url] }
-              = @kb.ask(:links)[:project][:fork][:title]
-          %li Modify the website
-          %li
-            Make a
-            %a.social.foundicon-github{ :href => @kb.ask(:links)[:project][:pull][:url] }
-              = @kb.ask(:links)[:project][:pull][:title]
+        = link_to(t('title_contribute_website'), contribute_path(:website))
 
       %hr
 
-      -# == Contribute for guides ================================================
+      -# == Contribute for guides ==============================================
 
       #about-project-contribute-guides
 
-        %h5 Contribute for guides
-        %ul
-          %li
-            %strong Create a new guide
-            %ul
-              %li Choose the existing modules you want
-              %li
-                Create the metadata for the module
-              %li
-                Create a
-                %a.social.foundicon-github{ :href => @kb.ask(:links)[:project][:new_issue][:url] }
-                  = @kb.ask(:links)[:project][:new_issue][:title]
-                and include the created guide and its metadata as attachments
-              %li
-                If it is approved, you will see your guide in
-                = @kb.ask(:website_info)[:acronym]
-                and you in the contributors list
+        = link_to(t('title_contribute_guides'), contribute_path(:guides))
 
       %hr
 
-      -# == Contribute for modules =================================================
+      -# == Contribute for modules =============================================
 
       #about-project-contribute-modules
 
-        %h5 Contribute for modules
-        %ul
-          %li
-            %strong Create a new module
-            %ul
-              %li Create a new module
-              %li Create the module metadata
-              %li
-                Create a
-                %a.social.foundicon-github{ :href => @kb.ask(:links)[:project][:new_issue][:url] }
-                  = @kb.ask(:links)[:project][:new_issue][:title]
-                and include the created module and its metadata as attachments
-          %li
-            %strong Contribute to existing modules
-            %ul
-              %li
-                Create a
-                %a.social.foundicon-github{ :href => @kb.ask(:links)[:project][:new_issue][:url] }
-                  = @kb.ask(:links)[:project][:new_issue][:title]
-                for an existing module to
-                %em fix
-                or
-                %em improve
-                it
+        = link_to(t('title_contribute_modules'), contribute_path(:modules))
 
   .large-5.columns
     .panel
 
-      -# == Make a donation ========================================================
+      -# == Make a donation ====================================================
 
-      %h5= @kb.ask(:about)[:donation][:title]
+      %h5= t('title_donation')
 
-      %p= @kb.ask(:about)[:donation][:subtitle]
+      %p= t('title_donation_subtitle')
 
       %form{ :action => 'https://www.paypal.com/cgi-bin/webscr', :method => 'post' }
         %input{ :name => 'cmd', :type => 'hidden', :value => '_s-xclick' }
@@ -90,4 +42,4 @@
         %input{ :alt => 'PayPal — The safer, easier way to pay online.', :border => '0', :name => 'submit', :src => 'https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif', :type => 'image' }
         %img{ :alt => '', :border => '0', :height => '1', :src => 'https://www.paypalobjects.com/it_IT/i/scr/pixel.gif', :width => '1' }
 
-      %p= @kb.ask(:about)[:donation][:reason]
+      %p= t('donation_reason')

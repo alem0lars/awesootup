@@ -8,6 +8,8 @@ Awesootup::Application.routes.draw do
 
   resources :homepages, :only => [:show]
 
+  resources :contributes, :only => [:show]
+
   resources :awesootup_modules
 
 end

@@ -1,0 +1,22 @@
+%h2= t('title_contribute_modules')
+
+%h4= t('title_contribute_modules_steps')
+%ul
+  %li
+    %strong= t('contribute_modules_create')
+    %ul
+      %li= t('contribute_modules_create')
+      %li= t('contribute_modules_createmetadata')
+      %li
+        = t('contribute_createa')
+        %a.social.foundicon-github{ :href => t('link_project_newissue_url') }
+          = t('link_project_newissue_title')
+        = t('contribute_modules_include')
+  %li
+    %strong= t('contribute_modules_existing')
+    %ul
+      %li
+        = t('contribute_createa')
+        %a.social.foundicon-github{ :href => t('link_project_newissue_url') }
+          = t('link_project_newissue_title')
+        = t('contribute_modules_existinggoal')

@@ -2,13 +2,24 @@ module AwesootupModulesHelper
 
   include ApplicationHelper
 
+  def render_features(awesootup_module)
+    [
+      render_provides(awesootup_module.provides,
+          :title => {:level => :h4, :text => t('title_features_provided')}),
+      render_pre_reqs(awesootup_module.pre_reqs,
+          :title => {:level => :h4, :text => t('title_features_pre_reqs')}),
+      render_post_reqs(awesootup_module.post_reqs,
+          :title => {:level => :h4, :text => t('title_features_post_reqs')})
+    ].reduce(:<<)
+  end
 
   def link_to_equally_satisfied(id, strict)
-    name = strict ? 'Equally Satisfied' : 'Satisfied'
+    name = strict ?
+        t('title_awesootupmodules_equallysatisfied') :
+        t('title_awesootupmodules_satisfied')
     desc = strict ?
-        'Awesootup Modules satisfied by exactly pre/post-requirements' :
-        'Awesootup Modules satisfied by the same or less ' +
-            'pre/post-requirements (there aren\'t additional requirements)'
+        t('awesootupmodules_equallysatisfied_desc') :
+        t('awesootupmodules_satisfied_desc')
 
     link_to(
       content_tag(:span, :'data-tooltip' => '', :class => 'has-tip',
@@ -20,10 +31,12 @@ module AwesootupModulesHelper
   end
 
   def link_to_alternatives(id, strict)
-    name = strict ? 'Strict Alternative' : 'Alternative'
+    name = strict ?
+        t('title_awesootupmodules_strictalternative') :
+        t('title_awesootupmodules_alternative')
     desc = strict ?
-        'Awesootup Modules that provides exactly the same features' :
-        'Awesootup Modules that provides the same or more features'
+        t('awesootupmodules_strictalternative_desc') :
+        t('awesootupmodules_alternative_desc')
 
     link_to(
       content_tag(:span, :'data-tooltip' => '', :class => 'has-tip',

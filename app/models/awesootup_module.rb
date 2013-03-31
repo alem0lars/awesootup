@@ -1,6 +1,19 @@
 class AwesootupModule < ActiveRecord::Base
 
+  include PgSearch
+
   attr_accessible :name, :desc
+
+  pg_search_scope :search_simple,
+      :against => [:name, :desc]
+
+  pg_search_scope :search_deep,
+      :against => [:name, :desc],
+      :associated_against => {
+        :provides => [:name, :desc],
+        :pre_reqs => [:name, :desc],
+        :post_reqs => [:name, :desc]
+      }
 
   belongs_to :author
 

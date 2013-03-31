@@ -2,21 +2,22 @@
 %html{ :lang => 'en' }
 
   -# == Head ===================================================================
+
   %head
 
     -# Use UTF-8 as the encoding
-    %meta{ :charset => "utf-8" }
+    %meta{ :charset => 'utf-8' }
     -# IE compatibility
-    %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+    %meta{ :content => 'IE=edge,chrome=1', :'http-equiv' => 'X-UA-Compatible' }
     -# Set the viewport width to device width for mobile
-    %meta{ :content => "width=device-width, initial-scale=1.0", :name => "viewport" }
+    %meta{ :content => 'width=device-width, initial-scale=1.0', :name => 'viewport' }
     -# Set the author informations
-    %meta{ :content => @kb.ask(:author)[:name], :name => "author" }
+    %meta{ :content => t('author_name'), :name => 'author' }
     -# Set the website description
-    %meta{ :content => @kb.ask(:website_info)[:desc], :name => "description" }
+    %meta{ :content => t('desc'), :name => 'description' }
 
     %title
-      = @kb.ask(:website_info)[:title]
+      = t('title')
       - if content_for?(:title)
         = yield(:title)
 
@@ -26,6 +27,7 @@
     = csrf_meta_tags
 
   -# == Body ===================================================================
+
   %body
 
     /[if lt IE 7]

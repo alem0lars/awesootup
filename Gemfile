@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'pg'
 # Search using PostgreSQL full-text search
 gem 'pg_search'
+# Manage i18n through Redis
+gem 'redis'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'

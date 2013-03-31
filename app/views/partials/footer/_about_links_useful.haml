@@ -11,14 +11,14 @@
 
         -# == About links - Useful - Title =====================================
 
-        %h5#about-links-project-title= @kb.ask(:about)[:links][:useful][:title]
+        %h5#about-links-useful-title= t('title_about_links_useful')
 
         -# == About links - Useful - Content ===================================
 
-        %ul#about-links-project-content
-          - @kb.ask(:links)[:useful].each do |link|
-            %li
-              %a{:href => link[:url]}= link[:title]
+        %ul#about-links-useful-content
+          %li
+            %a{ :href => t('link_author_homepage_url') }
+              = t('link_author_homepage_title')
 
   #about-links-project-wrp.large-6.columns
     .panel
@@ -29,11 +29,23 @@
 
         -# == About links - Project - Title ====================================
 
-        %h5#about-links-project-title= @kb.ask(:about)[:links][:project][:title]
+        %h5#about-links-project-title= t('title_about_links_project')
 
         -# == About links - Project - Content ==================================
 
         %ul#about-links-project-content
-          - @kb.ask(:links)[:project].each do |_, link|
-            %li
-              %a{:href => link[:url]}= link[:title]
+          %li
+            %a{ :href => t('link_project_sourcecode_url') }
+              = t('link_project_sourcecode_title')
+          %li
+            %a{ :href => t('link_project_issues_url') }
+              = t('link_project_issues_title')
+          %li
+            %a{ :href => t('link_project_fork_url') }
+              = t('link_project_fork_title')
+          %li
+            %a{ :href => t('link_project_pull_url') }
+              = t('link_project_pull_title')
+          %li
+            %a{ :href => t('link_project_newissue_url') }
+              = t('link_project_newissue_title')
