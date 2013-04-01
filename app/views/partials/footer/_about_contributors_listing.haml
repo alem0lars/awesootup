@@ -2,9 +2,9 @@
 
   %thead#about-contributors-listing-header
     %tr
-      %th= t('title_contributorstable_name')
-      %th= t('title_contributorstable_contact')
-      %th= t('title_contributorstable_contributions')
+      %th= t('g_r_name').titleize
+      %th= t('g_r_contact').titleize
+      %th= t('g_r_contributions').titleize
 
   %tbody#about-contributors-listing-body
 
@@ -13,11 +13,11 @@
     %tr
       %td
         %h6
-          %a{ :href => t('author_website') }= t('author_name')
+          %a{ :href => t('g_link_author_homepage_url') }= t('g_author_name')
       %td
-        %a{ :href => "mailto:#{t('author_email')}" }= t('author_email')
+        %a{ :href => "mailto:#{t('g_author_email')}" }= t('g_author_email')
       %td
-        %span.success.label= t('author_role')
+        %span.success.label= t('g_author_role')
 
     -# == Contributors contributions ===========================================
 

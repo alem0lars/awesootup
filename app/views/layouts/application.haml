@@ -12,12 +12,12 @@
     -# Set the viewport width to device width for mobile
     %meta{ :content => 'width=device-width, initial-scale=1.0', :name => 'viewport' }
     -# Set the author informations
-    %meta{ :content => t('author_name'), :name => 'author' }
+    %meta{ :content => t('g_author_name'), :name => 'author' }
     -# Set the website description
-    %meta{ :content => t('desc'), :name => 'description' }
+    %meta{ :content => t('g_desc'), :name => 'description' }
 
     %title
-      = t('title')
+      = t('g_title')
       - if content_for?(:title)
         = yield(:title)
 
@@ -30,20 +30,11 @@
 
   %body
 
-    /[if lt IE 7]
-      <p class="chromeframe">
-      You are using an <strong>outdated</strong> browser.
-      Please <a href="http://browsehappy.com/">upgrade your browser</a> or
-      <a href="http://www.google.com/chromeframe/?redirect=true">activate Google
-      Chrome Frame</a>
-      to improve your experience.</p>
-
     -# == ChromeFrame (for IE) =================================================
     = yield :chrome_frame
 
     -# == Menu =================================================================
-    %header{ :id => 'menu-top-wrp', :class => 'row' }
-      = render 'partials/menu_top'
+    = render 'partials/menu_top'
 
     -# == Main content =========================================================
     #main-wrp.row= yield

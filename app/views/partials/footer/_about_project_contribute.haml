@@ -9,7 +9,7 @@
 
       #about-project-contribute-website
 
-        = link_to(t('title_contribute_website'), contribute_path(:website))
+        = link_to(t('contribute_website_title'), contribute_path(:website))
 
       %hr
 
@@ -17,7 +17,7 @@
 
       #about-project-contribute-guides
 
-        = link_to(t('title_contribute_guides'), contribute_path(:guides))
+        = link_to(t('contribute_guides_title'), contribute_path(:guides))
 
       %hr
 
@@ -25,16 +25,16 @@
 
       #about-project-contribute-modules
 
-        = link_to(t('title_contribute_modules'), contribute_path(:modules))
+        = link_to(t('contribute_modules_title'), contribute_path(:modules))
 
   .large-5.columns
     .panel
 
       -# == Make a donation ====================================================
 
-      %h5= t('title_donation')
+      %h5= t('donation_title')
 
-      %p= t('title_donation_subtitle')
+      %p= t('donation_subtitle')
 
       %form{ :action => 'https://www.paypal.com/cgi-bin/webscr', :method => 'post' }
         %input{ :name => 'cmd', :type => 'hidden', :value => '_s-xclick' }

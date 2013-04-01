@@ -1,3 +1,13 @@
+/* == Import the variables, then override them, finally import foundation === */
+/* Global settings and mixins */
+@import "foundation/foundation-global";
+/* Settings overrides */
+@import "foundation/custom_settings";
+/* Foundation framework */
+@import "foundation";
+
+/* == Foundicons ============================================================ */
 @import "foundation-icons";
-@import "foundation/settings";
+
+/* == Custom foundation extensions ========================================== */
 @import "foundation/extensions";

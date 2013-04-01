@@ -1,18 +1,18 @@
-%h2= t('title_contribute_guides')
+%h2= t('contribute_guides_title')
 
-%h4= t('title_contribute_guides_steps')
+%h4= t('contribute_guides_steps_title')
 %ul
   %li
-    %strong= t('contribute_guides_create')
+    %strong= t('g_r_create_a_new_guide').capitalize
     %ul
-      %li= t('contribute_guides_choosemodule')
-      %li= t('contribute_guides_createmetadata')
+      %li= t('g_r_choose_the_desired_existing_modules').capitalize
+      %li= t('g_r_create_the_metadata_for_the_guide').capitalize
       %li
-        = t('contribute_createa')
-        %a.social.foundicon-github{ :href => t('link_project_newissue_url') }
-          = t('link_project_newissue_title')
-        = t('contribute_guides_include')
+        = t('g_r_create_a').capitalize
+        %a.social.foundicon-github{ :href => t('g_link_project_newissue_url') }
+          = t('g_link_project_newissue_title')
+        = t('g_r_and_include_the_created_guide_and_its_metadata_as_attachments')
       %li
-        = t('contribute_guides_approved')
-        = t('acronym')
-        = t('contribute_guides_seeincontributors')
+        = t('g_r_if_it_is_approved_you_will_see_your_guide_in').capitalize
+        = t('g_acronym')
+        = t('g_r_and_you_in_the_contributors_list')

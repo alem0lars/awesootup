@@ -1,159 +1,153 @@
 en:
 
-  # == Website Info ============================================================
+  # == Raw (syntactic meaning) =================================================
 
-  acronym: 'Awesootup'
-  desc: 'Modular gentoo setup guides'
-  motto: 'The modular gentoo setup guides that work!'
-  license_name: 'GPLv3'
-  license_website: 'http://www.gnu.org/licenses/gpl-3.0.html'
+  g_r_all_of_the_content_is_released_under_the: 'all of the content is released under the'
+  g_r_all_rights_reserved: 'all rights reserved'
+  g_r_and_include_the_created_guide_and_its_metadata_as_attachments: 'and include the created guide and its metadata as attachments'
+  g_r_and_include_the_created_module_and_its_metadata_as_attachments: 'and include the created module and its metadata as attachments'
+  g_r_and_you_in_the_contributors_list: 'and you in the contributors list'
+  g_r_browse: 'browse'
+  g_r_choose_the_desired_existing_modules: 'choose the desired existing modules'
+  g_r_contact: 'contact'
+  g_r_contributions: 'contributions'
+  g_r_copyright: 'copyright'
+  g_r_create: 'create'
+  g_r_create_a: 'create a'
+  g_r_create_a_new_guide: 'create a new guide'
+  g_r_create_a_new_module: 'create a new module'
+  g_r_create_the_metadata_for_the_guide: 'create the metadata for the guide'
+  g_r_create_the_metadata_for_the_module: 'create the metadata for the module'
+  g_r_deep_search: 'deep search'
+  g_r_edit: 'edit'
+  g_r_email: 'email'
+  g_r_for_an_existing_module_to_fix_or_improve_it: 'for an existing module to fix or improve it'
+  g_r_guides: 'guides'
+  g_r_if_it_is_approved_you_will_see_your_guide_in: 'if it is approved, you will see your guide in'
+  g_r_menu: 'menu'
+  g_r_modify_the_website: 'modify the website'
+  g_r_modules: 'modules'
+  g_r_module_name: 'module name'
+  g_r_name: 'name'
+  g_r_license: 'license'
+  g_r_remove: 'remove'
+  g_r_search: 'search'
+  g_r_start_now: 'start now'
+  g_r_website: 'website'
 
-  # == Author ==================================================================
+  # == Non-Raw (semantic meaning) ==============================================
 
-  author_name: 'Alessandro Molari'
-  author_email: 'molari.alessandro@gmail.com'
-  author_website: 'http://molarialessandro.info'
-  author_role: 'Modules, Guides, Website designer and author'
+  # >> == Website Info =========================================================
 
-  # == Titles ==================================================================
+  g_title: 'Awesome Gentoo Setup'
+  g_acronym: 'Awesootup'
+  g_desc: 'Modular gentoo setup guides'
+  g_motto: 'The modular gentoo setup guides that work!'
 
-  title: 'Awesome Gentoo Setup'
+  # >> == Author ===============================================================
 
-  title_menu_expand: 'Menu'
+  g_author_name: 'Alessandro Molari'
+  g_author_email: 'molari.alessandro@gmail.com'
+  g_author_role: 'Modules, Guides, Website designer and author'
 
-  # == About ===================================================================
+  # >> == Links ================================================================
 
-  title_about: 'About'
+  g_link_author_homepage_title: 'Author Homepage'
+  g_link_author_homepage_url: 'http://molarialessandro.info'
 
-  title_about_project: 'About the project'
+  g_link_license_title: 'GPLv3'
+  g_link_license_url: 'http://www.gnu.org/licenses/gpl-3.0.html'
 
-  title_about_contributors: 'About Author / Contributors'
-  title_about_contributors_comment: 'Many thanks to all contributors!'
+  g_link_project_fork_title: 'Fork the project'
+  g_link_project_fork_url: 'https://github.com/alem0lars/awesootup/fork_select'
 
-  title_about_links: 'Some links'
-  title_about_links_useful: 'Useful links'
-  title_about_links_project: 'Project links'
+  g_link_project_pull_title: 'Pull request'
+  g_link_project_pull_url: 'https://github.com/alem0lars/awesootup/pull/new/master'
 
-  title_contributorstable_name: 'Name'
-  title_contributorstable_contact: 'Contact'
-  title_contributorstable_contributions: 'Contributions'
+  g_link_project_newissue_title: 'New Issue'
+  g_link_project_newissue_url: 'https://github.com/alem0lars/awesootup/issues/new'
 
-  title_search: 'Search'
-  title_search_deep: 'Deep Search'
+  g_link_project_sourcecode_title: 'Awesootup SourceCode'
+  g_link_project_sourcecode_url: 'https://github.com/alem0lars/awesootup'
 
-  # == Donation ================================================================
+  g_link_project_issues_title: 'Awesootup Issues'
+  g_link_project_issues_url: 'https://github.com/alem0lars/awesootup/issues'
 
-  title_donation: 'Make a donation'
-  title_donation_subtitle: 'Feel free to make any donation you want by clicking the button below'
+  # >> == Donation =============================================================
+
+  donation_title: 'Make a donation'
+  donation_subtitle: 'Feel free to make any donation you want by clicking the button below'
 
   donation_reason: 'Donations are entirely used to mantain the awesootup infrastructure'
 
-  # == Homepage ================================================================
+  # >> == About (section) ======================================================
 
-  title_homepage: 'Homepage'
+  about_title: 'About'
 
-  # == Contribute ==============================================================
+  about_project_title: 'About the project'
 
-  title_contribute: 'Contribute'
+  about_contributors_title: 'About Author / Contributors'
+  about_contributors_comment: 'Many thanks to all contributors!'
 
-  title_contribute_website: 'Contribute for the website'
-  title_contribute_website_short: 'Website'
-  title_contribute_website_steps: 'To modify the website we follow the fork/pull pattern:'
-  title_contribute_guides: 'Contribute for guides'
-  title_contribute_guides_short: 'Guides'
-  title_contribute_modules: 'Contribute for modules'
-  title_contribute_modules_short: 'Modules'
-  title_contribute_modules_steps: 'Contribution for modules typically involves in modules creation, but also in existing modules improvements:'
+  about_links_title: 'Some links'
+  about_links_useful_title: 'Useful links'
+  about_links_project_title: 'Project links'
 
-  contribute_website_modify: 'Modify the website'
+  # >> == Homepage (Resource) ==================================================
 
-  contribute_guides_create: 'Create a new guide'
-  contribute_guides_createmetadata: 'Create the metadata for the guide'
-  contribute_guides_include: 'and include the created guide and its metadata as attachments'
-  contribute_guides_approved: 'If it is approved, you will see your guide in'
-  contribute_guides_seeincontributors: 'and you in the contributors list'
-  contribute_guides_choosemodule: 'Choose an existing module'
+  homepage_title: 'Homepage'
 
-  contribute_modules_create: 'Create a new module'
-  contribute_modules_existing: 'Contribute to existing modules'
-  contribute_modules_createmetadata: 'Create the metadata for the module'
-  contribute_modules_include: 'and include the created module and its metadata as attachments'
-  contribute_modules_existinggoal: 'for an existing module to fix or improve it'
+  # >> == Contribute (Resource) ================================================
 
-  contribute_createa: 'Create a'
+  contribute_title: 'Contribute'
 
-  # == Awesootup Modules =======================================================
+  contribute_website_title: 'Contribute for the website'
+  contribute_website_steps_title: 'To modify the website we follow the fork/pull pattern:'
 
-  title_awesootupmodules: 'Awesootup Modules'
+  contribute_guides_title: 'Contribute for guides'
+  contribute_guides_steps_title: 'Create new guides using existing modules'
 
-  title_awesootupmodules_available: 'Available Awesootup Modules'
+  contribute_modules_title: 'Contribute for modules'
+  contribute_modules_steps_title: 'Contribution for modules typically involves in modules creation, but also in existing modules improvements:'
+  contribute_modules_new_title: 'Contribute by creating new modules'
+  contribute_modules_existing_title: 'Contribute to existing modules'
 
-  title_awesootupmodules_equallysatisfied: 'Equally Satisfied'
-  title_awesootupmodules_satisfied: 'Satisfied'
+  # >> == AwesootupModule (Resource) ===========================================
 
-  title_awesootupmodules_alternative: 'Alternative'
-  title_awesootupmodules_strictalternative: 'Strict Alternative'
+  awesootupmodule_satisfied_action: 'Satisfied'
+  awesootupmodule_satisfied_desc: 'Awesootup Modules satisfied by the same or less pre/post-requirements (there arent additional requirements)'
 
-  awesootupmodules_equallysatisfied_desc: 'Awesootup Modules satisfied by exactly pre/post-requirements'
-  awesootupmodules_satisfied_desc: 'Awesootup Modules satisfied by the same or less pre/post-requirements (there arent additional requirements)'
+  awesootupmodule_equallysatisfied_action: 'Equally Satisfied'
+  awesootupmodule_equallysatisfied_desc: 'Awesootup Modules satisfied by exactly pre/post-requirements'
 
-  awesootupmodules_alternative_desc: 'Awesootup Modules that provides the same or more features'
-  awesootupmodules_strictalternative_desc: 'Awesootup Modules that provides exactly the same features'
+  awesootupmodule_alternative_action: 'Alternative'
+  awesootupmodule_alternative_desc: 'Awesootup Modules that provides the same or more features'
 
-  # == Awesootup Features ======================================================
+  awesootupmodule_strictalternative_action: 'Strict Alternative'
+  awesootupmodule_strictalternative_desc: 'Awesootup Modules that provides exactly the same features'
 
-  title_features: 'Features'
+  awesootupmodules_title: 'Awesootup Modules'
 
-  title_features_provided: 'Features provided'
-  title_features_pre_reqs: 'Features pre-required'
-  title_features_post_reqs: 'Features post-required'
+  awesootupmodules_available_title: 'Available Awesootup Modules'
 
-  title_awesootup_author_name: 'Name'
-  title_awesootup_author_email: 'Email'
-  title_awesootup_author_website: 'Website'
+  # >> == AwesootupFeature (Resource) ==========================================
 
-  # == Awesootup News ==========================================================
+  features_title: 'Features'
 
-  title_news: 'News'
+  features_provided_title: 'Features provided'
+  features_pre_reqs_title: 'Features pre-required'
+  features_post_reqs_title: 'Features post-required'
 
-  # == Links ===================================================================
+  # >> == Awesootup News =======================================================
 
-  link_project_fork_title: 'Fork the project'
-  link_project_fork_url: 'https://github.com/alem0lars/awesootup/fork_select'
+  news_title: 'News'
 
-  link_project_pull_title: 'Pull request'
-  link_project_pull_url: 'https://github.com/alem0lars/awesootup/pull/new/master'
+  # >> == GuideBuilder =========================================================
 
-  link_project_newissue_title: 'New Issue'
-  link_project_newissue_url: 'https://github.com/alem0lars/awesootup/issues/new'
-
-  link_project_sourcecode_title: 'Awesootup SourceCode'
-  link_project_sourcecode_url: 'https://github.com/alem0lars/awesootup'
-
-  link_project_issues_title: 'Awesootup Issues'
-  link_project_issues_url: 'https://github.com/alem0lars/awesootup/issues'
-
-  link_author_homepage_title: 'Author Homepage'
-  link_author_homepage_url: 'http://molarialessandro.info'
-
-  # == Copyright ===============================================================
-
-  copyright: 'Copyright'
-  copyright_allrights: 'All rights reserved'
-
-  # == License =================================================================
-
-  license: 'license'
-  license_releasedunder: 'All of the content is released under the'
-
-  # == GuideBuilder ============================================================
-
-  title_guidebuilder: 'Guide Builder'
-  title_guidebuilder_standalone: 'Standalone'
-  title_guidebuilder_standalone_subtitle: 'The standalone guide is the classic one, containing all of the basic modules, featuring a complete setup.'
-  title_guidebuilder_popular: 'Popular'
-  title_guidebuilder_popular_subtitle: 'The popular guides are those created by the community'
-  title_guidebuilder_custom: 'Custom'
-  title_guidebuilder_custom_subtitle: 'Here you can create your custom guide by selecting the desired modules'
-
-  guidebuilder_start_button: 'Start now'
+  # title_guidebuilder: 'Guide Builder'
+  # title_guidebuilder_standalone: 'Standalone'
+  # title_guidebuilder_standalone_subtitle: 'The standalone guide is the classic one, containing all of the basic modules, featuring a complete setup.'
+  # title_guidebuilder_popular: 'Popular'
+  # title_guidebuilder_popular_subtitle: 'The popular guides are those created by the community'
+  # title_guidebuilder_custom: 'Custom'
+  # title_guidebuilder_custom_subtitle: 'Here you can create your custom guide by selecting the desired modules'

@@ -1,22 +1,22 @@
-%h2= t('title_contribute_modules')
+%h2= t('contribute_modules_title')
 
-%h4= t('title_contribute_modules_steps')
+%h4= t('contribute_modules_steps_title')
 %ul
   %li
-    %strong= t('contribute_modules_create')
+    %strong= t('contribute_modules_new_title')
     %ul
-      %li= t('contribute_modules_create')
-      %li= t('contribute_modules_createmetadata')
+      %li= t('g_r_create_a_new_module').capitalize
+      %li= t('g_r_create_the_metadata_for_the_module').capitalize
       %li
-        = t('contribute_createa')
-        %a.social.foundicon-github{ :href => t('link_project_newissue_url') }
-          = t('link_project_newissue_title')
-        = t('contribute_modules_include')
+        = t('g_r_create_a').capitalize
+        %a.social.foundicon-github{ :href => t('g_link_project_newissue_url') }
+          = t('g_link_project_newissue_title')
+        = t('g_r_and_include_the_created_module_and_its_metadata_as_attachments')
   %li
-    %strong= t('contribute_modules_existing')
+    %strong= t('contribute_modules_existing_title')
     %ul
       %li
-        = t('contribute_createa')
-        %a.social.foundicon-github{ :href => t('link_project_newissue_url') }
-          = t('link_project_newissue_title')
-        = t('contribute_modules_existinggoal')
+        = t('g_r_create_a').capitalize
+        %a.social.foundicon-github{ :href => t('g_link_project_newissue_url') }
+          = t('g_link_project_newissue_title')
+        = t('g_r_for_an_existing_module_to_fix_or_improve_it')

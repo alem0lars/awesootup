@@ -1,19 +1,19 @@
-- content_for(:title) { t('title_awesootupmodules') }
+- content_for(:title) { t('awesootupmodules_title') }
 
 .row
   #awesootup-index-title-wrp.large-8.columns
-    %h1#awesootup-index-title= t('title_awesootupmodules_available')
+    %h1#awesootup-index-title= t('awesootupmodules_available_title')
   #awesootup-index-search-wrp.large-4.columns
     = form_tag(awesootup_modules_path, :method => 'get', :id => 'awesootup-index-search') do
       = hidden_field_tag :filtering, true
       .row
         .large-12.columns
-          = text_field_tag(:search_value, nil, :placeholder => "#{t('title_search')}...")
+          = text_field_tag(:search_value, nil, :placeholder => "#{t('g_r_search').titleize}...")
       .row
         .large-12.columns
           %ul.button-group
-            %li= submit_tag(t('title_search'), :name => :type, :class => 'small button')
-            %li= submit_tag(t('title_search_deep'), :name => :type, :class => 'small button')
+            %li= submit_tag(t('g_r_search').titleize, :name => :type, :class => 'small button')
+            %li= submit_tag(t('g_r_deep_search').titleize, :name => :type, :class => 'small button')
 
 .section-container.accordion{ :'data-section' => 'accordion' }
   - @awesootup_modules.each do |awesootup_module|
@@ -42,9 +42,9 @@
             .large-5.columns.awesootup-module-author-wrp.panel
               %h4 Author
               %dl.awesootup-module-author
-                %dt.awesootup-module-author-name-title= t('title_awesootup_author_name')
+                %dt.awesootup-module-author-name-title= t('g_r_name').titleize
                 %dd.awesootup-module-author-name= awesootup_module.author[:name]
-                %dt.awesootup-module-author-email-title= t('title_awesootup_author_email')
+                %dt.awesootup-module-author-email-title= t('g_r_email').titleize
                 %dd.awesootup-module-author-email= awesootup_module.author[:email] or '---'
-                %dt.awesootup-module-author-website-title= t('title_awesootup_author_website')
+                %dt.awesootup-module-author-website-title= t('g_r_website').titleize
                 %dd.awesootup-module-author-website= awesootup_module.author[:website] or '---'

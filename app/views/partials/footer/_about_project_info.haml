@@ -5,17 +5,17 @@
     -# == About the project - Info - Copyright =================================
     #about-project-info-copyright-wrp
       %p#about-project-info-copyright
-        = t('copyright').capitalize
+        = t('g_r_copyright').capitalize
         ©
         = Time.now.strftime('%Y')
-        %strong= t('author_name')
+        %strong= t('g_author_name')
         %em
         \.
-        = t('copyright_allrights')
+        = t('g_r_all_rights_reserved').capitalize
 
     -# == About the project - Info - License ===================================
     #about-project-info-license-wrp
       %p#about-project-info-license
-        = t('license_releasedunder')
-        %a{ :href => t('license_website') }
-          %span.label= "#{t('license_name')} #{t('license').downcase}"
+        = t('g_r_all_of_the_content_is_released_under_the').capitalize
+        %a{ :href => t('g_link_license_url') }
+          %span.label= "#{t('g_link_license_title')} #{t('g_r_license')}"

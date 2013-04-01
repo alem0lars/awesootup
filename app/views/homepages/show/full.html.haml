@@ -1,4 +1,4 @@
-- content_for(:title) { t('title_homepage') }
+- content_for(:title) { t('homepage_title') }
 
 
 #main.large-12.columns.page-index
@@ -14,13 +14,13 @@
         .row
           #logo-wrp.large-5.columns= image_tag 'logo.svg', :id => 'logo'
           #title-wrp.large-7.columns
-            %h1#title= t('title')
+            %h1#title= t('g_title')
 
         -# == Description ======================================================
 
         .row
           .large-8.columns.centered
-            %h3#description.subheader= t('motto')
+            %h3#description.subheader= t('g_motto')
 
   %hr
 
@@ -35,7 +35,7 @@
         #features.panel.rounded
 
           #features-title-wrp
-            %h3#features-title.general.foundicon-idea= " #{t('title_features')}"
+            %h3#features-title.general.foundicon-idea= " #{t('features_title')}"
 
           %dl#features-items
             - @awesootup_features.each do |awesootup_feature|
@@ -52,7 +52,7 @@
         #news.panel.rounded
 
           #news-title-wrp
-            %h3#news-title.general.foundicon-flag= " #{t('title_news')}"
+            %h3#news-title.general.foundicon-flag= " #{t('news_title')}"
 
           %dl#news-items
             - @awesootup_news.each do |awesootup_news_item|
@@ -66,72 +66,72 @@
   %hr
 
   -# == GuideBuilder ===========================================================
-  #guidebuilder-wrp.row
-    #guidebuilder.large-12.columns
-      .panel.rounded
-        %h4#guidebuilder-title= t('title_guidebuilder')
-        .section-container.tabs{ :'data-section' => '' }
+  / #guidebuilder-wrp.row
+  /   #guidebuilder.large-12.columns
+  /     .panel.rounded
+  /       %h4#guidebuilder-title= t('title_guidebuilder')
+  /       .section-container.tabs{ :'data-section' => '' }
 
-          -# == GuideBuilder Standalone ========================================
+  /         -# == GuideBuilder Standalone ========================================
 
-          %section#guidebuilder-standalone.section
+  /         %section#guidebuilder-standalone.section
 
-            -# == GuideBuilder Standalone - Title ==============================
+  /           -# == GuideBuilder Standalone - Title ==============================
 
-            %p#guidebuilder-standalone-title-wrp.title
-              %a#guidebuilder-standalone-title{ :href => '#guidebuilder-standalone' }
-                %i.general.foundicon-checkmark= " #{t('title_guidebuilder_standalone')}"
+  /           %p#guidebuilder-standalone-title-wrp.title
+  /             %a#guidebuilder-standalone-title{ :href => '#guidebuilder-standalone' }
+  /               %i.general.foundicon-checkmark= " #{t('title_guidebuilder_standalone')}"
 
-            -# == GuideBuilder Standalone - Content ============================
+  /           -# == GuideBuilder Standalone - Content ============================
 
-            #guidebuilder-standalone-content.content
-              .row
-                .large-8.columns
-                  %h5= t('title_guidebuilder_standalone_subtitle')
-                .large-4.columns
-                  %a#start-standalone-guide.radius.button
-                    = t('guidebuilder_start_button')
+  /           #guidebuilder-standalone-content.content
+  /             .row
+  /               .large-8.columns
+  /                 %h5= t('title_guidebuilder_standalone_subtitle')
+  /               .large-4.columns
+  /                 %a#start-standalone-guide.radius.button
+  /                   = t('g_r_start_now').capitalize
 
-              %hr
+  /             %hr
 
-              / TODO Here will be inserted the standalone awesootup widget
+  /             / TODO Here will be inserted the standalone awesootup widget
 
-          -# == GuideBuilder Popular ===========================================
+  /         -# == GuideBuilder Popular ===========================================
 
-          %section#guidebuilder-popular.section
+  /         %section#guidebuilder-popular.section
 
-            -# == GuideBuilder Popular - Title =================================
+  /           -# == GuideBuilder Popular - Title =================================
 
-            %p#guidebuilder-popular-title-wrp.title
-              %a#guidebuilder-popular-title{ :href => '#guidebuilder-popular' }
-                %i.general.foundicon-star= " #{t('title_guidebuilder_popular')}"
+  /           %p#guidebuilder-popular-title-wrp.title
+  /             %a#guidebuilder-popular-title{ :href => '#guidebuilder-popular' }
+  /               %i.general.foundicon-star= " #{t('title_guidebuilder_popular')}"
 
-            -# == GuideBuilder Popular - Content ===============================
+  /           -# == GuideBuilder Popular - Content ===============================
 
-            #guidebuilder-popular-content.content
-              .row
-                .large-8.columns
-                  %h5= t('title_guidebuilder_popular_subtitle')
-                .large-4.columns
-                  %a#start-popular-guide.radius.button
-                    = t('guidebuilder_start_button')
+  /           #guidebuilder-popular-content.content
+  /             .row
+  /               .large-8.columns
+  /                 %h5= t('title_guidebuilder_popular_subtitle')
+  /               .large-4.columns
+  /                 %a#start-popular-guide.radius.button
+  /                   = t('g_r_start_now').capitalize
 
-          -# == GuideBuilder Custom ============================================
+  /         -# == GuideBuilder Custom ============================================
 
-          %section#guidebuilder-custom.section
+  /         %section#guidebuilder-custom.section
 
-            -# == GuideBuilder Custom - Title ==================================
+  /           -# == GuideBuilder Custom - Title ==================================
 
-            %p#guidebuilder-custom-title-wrp.title
-              %a#guidebuilder-custom-title{ :href => '#guidebuilder-custom' }
-                %i.general.foundicon-tools= " #{t('title_guidebuilder_custom')}"
+  /           %p#guidebuilder-custom-title-wrp.title
+  /             %a#guidebuilder-custom-title{ :href => '#guidebuilder-custom' }
+  /               %i.general.foundicon-tools= " #{t('title_guidebuilder_custom')}"
 
-            -# == GuideBuilder Custom - Content ================================
+  /           -# == GuideBuilder Custom - Content ================================
 
-            #guidebuilder-custom-content.content
-              .row
-                .large-8.columns
-                  %h5= t('title_guidebuilder_custom_subtitle')
-                .large-4.columns
-                  %a#start-custom-guide.radius.button
-                    = t('guidebuilder_start_button')
+  /           #guidebuilder-custom-content.content
+  /             .row
+  /               .large-8.columns
+  /                 %h5= t('title_guidebuilder_custom_subtitle')
+  /               .large-4.columns
+  /                 %a#start-custom-guide.radius.button
+  /                   = t('g_r_start_now').capitalize
