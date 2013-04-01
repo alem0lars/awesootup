@@ -5,6 +5,16 @@ This is the source code for the Awesome Gentoo Setup.
 It is released under the GPLv3 license (see LICENSE.md)
 
 
+== News
+
+See CHANGELOG.md
+
+
+== Features
+
+See FEATURES.md
+
+
 == Author
 
 Alessandro Molari
@@ -14,10 +24,10 @@ molari.alessandro@gmail.com
 
 == Directory structure
 
-Awesootup follows the default directory structure of a generated Ruby on Rails
-application:
+Awesootup follows the standard directory structure of a Ruby on Rails app:
 
   |-- app
+  |   |-- admin
   |   |-- assets
   |   |   |-- images
   |   |   |-- javascripts
@@ -57,6 +67,9 @@ application:
 
 app
   Holds all the code that's specific to this particular application.
+
+app/admin
+  Holds the code that's specific to the administration part of the application.
 
 app/assets
   Contains subdirectories for images, stylesheets, and JavaScript files.
