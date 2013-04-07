@@ -7,6 +7,8 @@ class CreateContributors < ActiveRecord::Migration
       t.text :website
       t.text :contributions
 
+      t.string :type # for STI
+
       t.timestamps
     end
 

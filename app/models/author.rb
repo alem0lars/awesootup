@@ -1,5 +1,3 @@
-class Author < ActiveRecord::Base
-  attr_accessible :email, :name, :website
-
+class Author < Contributor
   has_many :awesootup_modules
 end

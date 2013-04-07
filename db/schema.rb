@@ -47,9 +47,6 @@ ActiveRecord::Schema.define(:version => 20130331145641) do
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
   create_table "authors", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.text     "website"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -103,6 +100,7 @@ ActiveRecord::Schema.define(:version => 20130331145641) do
     t.string   "email"
     t.text     "website"
     t.text     "contributions"
+    t.string   "type"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

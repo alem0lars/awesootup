@@ -39,11 +39,10 @@ class AwesootupModulesController < ApplicationController
   end
 
   def new
-
+    @awesootup_module = AwesootupModule.new
   end
 
   def create
-
   end
 
   def edit

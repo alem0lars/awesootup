@@ -2,6 +2,18 @@ module AwesootupModulesHelper
 
   include ApplicationHelper
 
+
+  def render_features_form(name, title, columns, &block)
+    content_tag(:div, :class => "large-#{columns} columns") do
+      content_tag(:fieldset, :class => "features-#{name}-wrp") do
+        content_tag(:legend, :class => "features-#{name}-title") do
+          title.to_s.html_safe
+        end +
+        content_tag(:div, :class => "features-#{name}", &block)
+      end
+    end
+  end
+
   def render_features(awesootup_module)
     [
       render_provides(awesootup_module.provides,

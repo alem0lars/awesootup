@@ -18,10 +18,9 @@
     %ul.left
       %li
       %li.has-dropdown
-        %a= t('awesootupmodules_title')
+        %a.general.foundicon-page= " #{t('awesootupmodules_title')}"
         %ul.dropdown
 
-          %li.divider
           %li= link_to t('g_r_browse').titleize, awesootup_modules_path
 
           %li.divider
@@ -47,21 +46,19 @@
                 .small-9.columns
                   = text_field_tag t('g_r_name').titleize, nil, :placeholder => t('g_r_module_name').titleize
                 .small-3.columns
-                  = button_to t('g_r_remove').titleize, awesootup_modules_path, :method => :delete, :class => 'alert button prefix'
-
-      %li.has-dropdown
-        %a= t('contribute_title')
-        %ul.dropdown
-          %li
-            %label= t('contribute_title')
-          %li= link_to(t('g_r_website').titleize, contribute_path(:website))
-          %li.divider
-          %li= link_to(t('g_r_guides').titleize, contribute_path(:guides))
-          %li= link_to(t('g_r_modules').titleize, contribute_path(:modules))
+                  = button_to t('g_r_rem').titleize, awesootup_modules_path, :method => :delete, :class => 'alert button prefix'
 
     -# == Right Navigation ===============================================
 
     %ul.right
 
+      %li.has-dropdown
+        %a.general.foundicon-heart= " #{t('contribute_title')}"
+        %ul.dropdown
+          %li= link_to(t('g_r_website').titleize, contribute_path(:website))
+          %li.divider
+          %li= link_to(t('g_r_guides').titleize, contribute_path(:guides))
+          %li= link_to(t('g_r_modules').titleize, contribute_path(:modules))
+
       %li
-        = link_to t('about_title'), 'javascript:void(0)', :class => 'social foundicon-torso go-to-bottom trigger-click', :'data-trigger-click-target' => '#about-project-title'
+        = link_to " #{t('about_title')}", 'javascript:void(0)', :class => 'social foundicon-torso go-to-bottom trigger-click', :'data-trigger-click-target' => '#about-project-title'

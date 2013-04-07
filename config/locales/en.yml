@@ -30,6 +30,7 @@ en:
   g_r_module_name: 'module name'
   g_r_name: 'name'
   g_r_license: 'license'
+  g_r_rem: 'rem'
   g_r_remove: 'remove'
   g_r_search: 'search'
   g_r_start_now: 'start now'

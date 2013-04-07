@@ -1,0 +1,52 @@
+= form_for(@awesootup_module, :url => { :action => 'create' }) do |f|
+
+  -# == Basic Informations =====================================================
+  .row
+    %fieldset#basicinfo-wrp.large-12.columns
+      %legend#basicinfo-title Basic Informations
+      #basicinfo
+
+        .row
+          #basicinfo-name-wrp.large-12.columns
+            = f.label :name
+            = f.text_field :name, :id => 'basicinfo-name'
+
+        .row
+          #basicinfo-desc-wrp.large-12.columns
+            = f.label :description
+            = f.text_area :desc, :id => 'basicinfo-desc'
+
+  -# == Features ===============================================================
+  .row
+    %fieldset#features-wrp.large-12.columns
+      %legend#features-title Features
+      #features
+
+        .row
+
+          -# == Features PreReqs ===============================================
+          = render_features_form(:prereqs, t('features_pre_reqs_title'), 4) do
+            .row
+              #features-prereqs-name-wrp.large-12.columns
+                = f.label :name
+                = f.text_field :name, :id => 'features-postreqs-name'
+
+          -# == Features PostReqs ==============================================
+          = render_features_form(:postreqs, t('features_post_reqs_title'), 4) do
+            .row
+              #features-postreqs-name-wrp.large-12.columns
+                = f.label :name
+                = f.text_field :name, :id => 'features-postreqs-name'
+
+          = render_features_form(:provides, t('features_provided_title'), 4) do
+            .row
+              #features-provides-name-wrp.large-12.columns
+                = f.label :name
+                = f.text_field :name, :id => 'features-provides-name'
+
+  -# == Actions ================================================================
+  .row
+    %fieldset#actions-wrp.large-12.columns
+      #actions
+        .row
+          = f.submit 'Create', :id => 'actions-create'
