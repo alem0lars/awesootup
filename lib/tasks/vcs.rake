@@ -18,7 +18,7 @@ namespace :vcs do
   desc "Commit changes in the gh-pages branch"
   task :commit_ghp do
     sh "git checkout gh-pages", :verbose => false
-    Rake::Task[:vcs][:commit]
+    Rake::Task['vcs:commit'].invoke
   end
 
   desc "Push in github pages"
