@@ -1,0 +1,24 @@
+Tue, 30 Apr 2013 22:45:20 +0200
+doc/README_FOR_APP	Thu, 28 Mar 2013 10:57:02 +0100
+app/admin/admin_user.rb	Thu, 28 Mar 2013 20:29:59 +0100
+app/admin/authors.rb	Fri, 29 Mar 2013 19:08:30 +0100
+app/admin/awesootup_modules.rb	Fri, 29 Mar 2013 17:22:27 +0100
+app/admin/dashboard.rb	Thu, 28 Mar 2013 20:29:59 +0100
+app/admin/homepages.rb	Fri, 29 Mar 2013 17:22:11 +0100
+app/admin/translations.rb	Sun, 31 Mar 2013 14:59:04 +0200
+app/controllers/application_controller.rb	Sun, 31 Mar 2013 21:29:10 +0200
+app/controllers/awesootup_modules_controller.rb	Sun, 07 Apr 2013 13:32:41 +0200
+app/controllers/contributes_controller.rb	Sun, 31 Mar 2013 21:30:00 +0200
+app/controllers/homepages_controller.rb	Thu, 28 Mar 2013 12:31:55 +0100
+app/helpers/application_helper.rb	Fri, 29 Mar 2013 11:26:14 +0100
+app/helpers/awesootup_modules_helper.rb	Sun, 07 Apr 2013 14:39:51 +0200
+app/helpers/contributes_helper.rb	Sun, 31 Mar 2013 18:10:16 +0200
+app/helpers/homepages_helper.rb	Thu, 28 Mar 2013 17:45:14 +0100
+app/models/admin_user.rb	Thu, 28 Mar 2013 20:29:59 +0100
+app/models/author.rb	Tue, 02 Apr 2013 21:04:05 +0200
+app/models/awesootup_feature.rb	Sun, 31 Mar 2013 16:57:18 +0200
+app/models/awesootup_module.rb	Sun, 07 Apr 2013 13:29:57 +0200
+app/models/awesootup_module_feature.rb	Sat, 30 Mar 2013 09:38:44 +0100
+app/models/awesootup_news.rb	Sun, 31 Mar 2013 16:57:05 +0200
+app/models/contributor.rb	Tue, 02 Apr 2013 21:04:40 +0200
+app/models/homepage.rb	Thu, 28 Mar 2013 17:47:52 +0100

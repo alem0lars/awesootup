@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module AwesootupModulesHelper - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/helpers/awesootup_modules_helper.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="ApplicationHelper.html">ApplicationHelper</a>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-link_to_alternatives">#link_to_alternatives</a>
+    
+    <li><a href="#method-i-link_to_equally_satisfied">#link_to_equally_satisfied</a>
+    
+    <li><a href="#method-i-render_feature">#render_feature</a>
+    
+    <li><a href="#method-i-render_feature_content">#render_feature_content</a>
+    
+    <li><a href="#method-i-render_features">#render_features</a>
+    
+    <li><a href="#method-i-render_features_form">#render_features_form</a>
+    
+    <li><a href="#method-i-render_post_reqs">#render_post_reqs</a>
+    
+    <li><a href="#method-i-render_pre_reqs">#render_pre_reqs</a>
+    
+    <li><a href="#method-i-render_provides">#render_provides</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./AdminUser.html">AdminUser</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Author.html">Author</a>
+  
+    <li><a href="./AwesootupFeature.html">AwesootupFeature</a>
+  
+    <li><a href="./AwesootupModule.html">AwesootupModule</a>
+  
+    <li><a href="./AwesootupModuleFeature.html">AwesootupModuleFeature</a>
+  
+    <li><a href="./AwesootupModulesController.html">AwesootupModulesController</a>
+  
+    <li><a href="./AwesootupModulesHelper.html">AwesootupModulesHelper</a>
+  
+    <li><a href="./AwesootupNews.html">AwesootupNews</a>
+  
+    <li><a href="./ContributesController.html">ContributesController</a>
+  
+    <li><a href="./ContributesHelper.html">ContributesHelper</a>
+  
+    <li><a href="./Contributor.html">Contributor</a>
+  
+    <li><a href="./Homepage.html">Homepage</a>
+  
+    <li><a href="./HomepagesController.html">HomepagesController</a>
+  
+    <li><a href="./HomepagesHelper.html">HomepagesHelper</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module AwesootupModulesHelper</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-link_to_alternatives" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">link_to_alternatives</span><span
+            class="method-args">(id, strict)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="link_to_alternatives-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 45</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">link_to_alternatives</span>(<span class="ruby-identifier">id</span>, <span class="ruby-identifier">strict</span>)
+  <span class="ruby-identifier">name</span> = <span class="ruby-identifier">strict</span> <span class="ruby-operator">?</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_strictalternative_action'</span>) <span class="ruby-operator">:</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_alternative_action'</span>)
+  <span class="ruby-identifier">desc</span> = <span class="ruby-identifier">strict</span> <span class="ruby-operator">?</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_strictalternative_desc'</span>) <span class="ruby-operator">:</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_alternative_desc'</span>)
+
+  <span class="ruby-identifier">link_to</span>(
+    <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>, <span class="ruby-value">:'data-tooltip'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">''</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'has-tip'</span>,
+        <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">desc</span>) { <span class="ruby-identifier">name</span> },
+    <span class="ruby-identifier">awesootup_modules_path</span>(<span class="ruby-value">:filtering</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:alternatives</span>,
+        <span class="ruby-value">:strict</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">strict</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>),
+    <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'small button'</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- link_to_alternatives-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- link_to_alternatives-method -->
+
+    
+      <div id="method-i-link_to_equally_satisfied" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">link_to_equally_satisfied</span><span
+            class="method-args">(id, strict)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="link_to_equally_satisfied-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">link_to_equally_satisfied</span>(<span class="ruby-identifier">id</span>, <span class="ruby-identifier">strict</span>)
+  <span class="ruby-identifier">name</span> = <span class="ruby-identifier">strict</span> <span class="ruby-operator">?</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_equallysatisfied_action'</span>) <span class="ruby-operator">:</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_satisfied_action'</span>)
+  <span class="ruby-identifier">desc</span> = <span class="ruby-identifier">strict</span> <span class="ruby-operator">?</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_equallysatisfied_desc'</span>) <span class="ruby-operator">:</span>
+      <span class="ruby-identifier">t</span>(<span class="ruby-string">'awesootupmodule_satisfied_desc'</span>)
+
+  <span class="ruby-identifier">link_to</span>(
+    <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>, <span class="ruby-value">:'data-tooltip'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">''</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'has-tip'</span>,
+        <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">desc</span>) { <span class="ruby-identifier">name</span> },
+    <span class="ruby-identifier">awesootup_modules_path</span>(<span class="ruby-value">:filtering</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>, <span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:equally_satisfied</span>,
+        <span class="ruby-value">:strict</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">strict</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>),
+    <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'small button'</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- link_to_equally_satisfied-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- link_to_equally_satisfied-method -->
+
+    
+      <div id="method-i-render_feature" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_feature</span><span
+            class="method-args">(feature_data, opts = {}, &block)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>@param feature_data Data used to render the feature.</p>
+
+<pre>It should contain a AwesootupModuleFeature object.</pre>
+
+<p>@param opts Options for the feature rendering</p>
+
+<p>If block_given?</p>
+
+<pre>Pass the block to the feature content renderer</pre>
+          
+
+          
+          <div class="method-source-code" id="render_feature-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 115</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_feature</span>(<span class="ruby-identifier">feature_data</span>, <span class="ruby-identifier">opts</span> = {}, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">opts</span> = {
+  }.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">opts</span>)
+
+  <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:li</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">feature_data</span>[<span class="ruby-value">:desc</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">feature_data</span>[<span class="ruby-value">:desc</span>].<span class="ruby-identifier">empty?</span>
+      <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:span</span>, <span class="ruby-value">:'data-tooltip'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">''</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'has-tip'</span>,
+          <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">feature_data</span>[<span class="ruby-value">:desc</span>]) <span class="ruby-keyword">do</span>
+        <span class="ruby-identifier">render_feature_content</span>(<span class="ruby-identifier">feature_data</span>[<span class="ruby-value">:name</span>], &amp;<span class="ruby-identifier">block</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">render_feature_content</span>(<span class="ruby-identifier">feature_data</span>[<span class="ruby-value">:name</span>], &amp;<span class="ruby-identifier">block</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_feature-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_feature-method -->
+
+    
+      <div id="method-i-render_feature_content" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_feature_content</span><span
+            class="method-args">(name) { || ... }</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>If block_given?</p>
+
+<pre>The feature content will be in inline-list with the elements provided by
+the Array returned by the yield.</pre>
+          
+
+          
+          <div class="method-source-code" id="render_feature_content-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 135</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_feature_content</span>(<span class="ruby-identifier">name</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+    <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:ul</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'inline-list'</span>) <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:li</span>) { <span class="ruby-identifier">name</span>.<span class="ruby-identifier">html_safe</span> }
+      <span class="ruby-keyword">yield</span>.<span class="ruby-identifier">reduce</span>(<span class="ruby-value">:&lt;&lt;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">name</span>.<span class="ruby-identifier">html_safe</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_feature_content-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_feature_content-method -->
+
+    
+      <div id="method-i-render_features" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_features</span><span
+            class="method-args">(awesootup_module)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="render_features-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_features</span>(<span class="ruby-identifier">awesootup_module</span>)
+  [
+    <span class="ruby-identifier">render_provides</span>(<span class="ruby-identifier">awesootup_module</span>.<span class="ruby-identifier">provides</span>,
+        <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:level</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:h4</span>, <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">t</span>(<span class="ruby-string">'features_provided_title'</span>)}),
+    <span class="ruby-identifier">render_pre_reqs</span>(<span class="ruby-identifier">awesootup_module</span>.<span class="ruby-identifier">pre_reqs</span>,
+        <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:level</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:h4</span>, <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">t</span>(<span class="ruby-string">'features_pre_reqs_title'</span>)}),
+    <span class="ruby-identifier">render_post_reqs</span>(<span class="ruby-identifier">awesootup_module</span>.<span class="ruby-identifier">post_reqs</span>,
+        <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> {<span class="ruby-value">:level</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:h4</span>, <span class="ruby-value">:text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">t</span>(<span class="ruby-string">'features_post_reqs_title'</span>)})
+  ].<span class="ruby-identifier">reduce</span>(<span class="ruby-value">:&lt;&lt;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_features-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_features-method -->
+
+    
+      <div id="method-i-render_features_form" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_features_form</span><span
+            class="method-args">(name, title, columns, &block)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="render_features_form-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_features_form</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">title</span>, <span class="ruby-identifier">columns</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:div</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;large-#{columns} columns&quot;</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:fieldset</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;features-#{name}-wrp&quot;</span>) <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:legend</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;features-#{name}-title&quot;</span>) <span class="ruby-keyword">do</span>
+        <span class="ruby-identifier">title</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">html_safe</span>
+      <span class="ruby-keyword">end</span> <span class="ruby-operator">+</span>
+      <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:div</span>, <span class="ruby-value">:class</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;features-#{name}&quot;</span>, &amp;<span class="ruby-identifier">block</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_features_form-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_features_form-method -->
+
+    
+      <div id="method-i-render_post_reqs" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_post_reqs</span><span
+            class="method-args">(data, opts = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="render_post_reqs-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_post_reqs</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">opts</span> = {})
+  <span class="ruby-identifier">render_features</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">opts</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_post_reqs-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_post_reqs-method -->
+
+    
+      <div id="method-i-render_pre_reqs" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_pre_reqs</span><span
+            class="method-args">(data, opts = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="render_pre_reqs-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_pre_reqs</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">opts</span> = {})
+  <span class="ruby-identifier">render_features</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">opts</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_pre_reqs-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_pre_reqs-method -->
+
+    
+      <div id="method-i-render_provides" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render_provides</span><span
+            class="method-args">(data, opts = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="render_provides-source">
+            <pre><span class="ruby-comment"># File app/helpers/awesootup_modules_helper.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render_provides</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">opts</span> = {})
+  <span class="ruby-identifier">render_features</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">opts</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render_provides-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render_provides-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
