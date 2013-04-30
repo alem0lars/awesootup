@@ -20,4 +20,4 @@
 /*.sublime-workspace
 
 # Documentation ignored in the master branch
-/doc
+/doc/**
