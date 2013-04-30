@@ -23,5 +23,4 @@
 /doc/**
 
 # Ignore the yardoc generated files
-/.yardoc
-
+.yardoc
