@@ -13,8 +13,3 @@ To visit the developers page of **Awesootup** visit (http://molarialessandro.inf
 To directly browse the **Awesootup Documentation** visit (http://molarialessandro.info/awesootup/doc)
 
 To edit the **Awesootup Documentation**, you can use the prose editor under (http://prose.io/#alem0lars/awesootup/tree/gh-pages)
-
-
-
-Thanks :)
-*Alessandro Molari*
