@@ -1,5 +1,5 @@
-= Main Awesootup Features
+# Main Awesootup Features
 
-== Browse and use standalone, popular and custom guides
+## Browse and use standalone, popular and custom guides
 
-== Modules can be browsed, created and used
+## Modules can be browsed, created and used

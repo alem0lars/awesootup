@@ -1,4 +1,4 @@
-= Awesootup News and Changes log
+# Awesootup News and Changes log
 
-== Version 1.0
+## Version 1.0
 Basic features released

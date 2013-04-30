@@ -21,3 +21,7 @@
 
 # Documentation ignored in the master branch
 /doc/**
+
+# Ignore the yardoc generated files
+/.yardoc
+

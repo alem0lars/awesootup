@@ -15,4 +15,15 @@ namespace :vcs do
     sh "git push origin master", :verbose => false
   end
 
+  desc "Commit changes in the gh-pages branch"
+  task :commit_ghp do
+    sh "git checkout gh-pages", :verbose => false
+    Rake::Task[:vcs][:commit]
+  end
+
+  desc "Push in github pages"
+  task :push_ghp => [:commit_ghp] do
+    sh "git push origin gh-pages", :verbose => false
+  end
+
 end

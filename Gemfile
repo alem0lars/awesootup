@@ -45,3 +45,8 @@ end
 
 group :production do
 end
+
+group :doc do
+  gem 'yard'
+  gem 'redcarpet'
+end

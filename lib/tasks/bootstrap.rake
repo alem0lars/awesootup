@@ -2,7 +2,7 @@
 
 def create_from_md(klass, file_name)
   File.open(Rails.root.join(file_name), 'r') do |file|
-    name_regex = /^\=\=\s+(?<name>.+)\s*$/
+    name_regex = /^\#\#\s+(?<name>.+)\s*$/
     lines = file.readlines
 
     lines.length.times do |idx|
