@@ -11,7 +11,8 @@ def create_from_md(klass, file_name)
         content = ''; idx = idx + 1
 
         while (idx < lines.length) && !name_regex.match(lines[idx])
-          content << lines[idx].strip
+          (content << lines[idx].strip) unless lines[idx].strip.empty?
+
           idx = idx + 1
         end
 
