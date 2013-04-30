@@ -19,3 +19,6 @@
 /*.sublime-project
 /*.sublime-workspace
 
+# Ignore the yardoc generated files
+/.yardoc
+
