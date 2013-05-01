@@ -4,8 +4,11 @@
 
 <h3>Directory Structure</h3>
 
-Awesootup follows the standard directory structure of a Ruby on Rails app:
+<p>
+  Awesootup follows the standard directory structure of a Ruby on Rails app:
+</p>
 
+<code>
   |-- app
   |   |-- admin
   |   |-- assets
@@ -44,73 +47,100 @@ Awesootup follows the standard directory structure of a Ruby on Rails app:
       |   |-- javascripts
       |   `-- stylesheets
       `-- plugins
+</code>
 
-app
-  Holds all the code that's specific to this particular application.
+<dl>
 
-app/admin
-  Holds the code that's specific to the administration part of the application.
+  <dt>app</dt>
+  <dd>Holds all the code that's specific to this particular application.</dd>
 
-app/assets
-  Contains subdirectories for images, stylesheets, and JavaScript files.
+  <dt>app/admin</dt>
+  <dd>Holds the code that's specific to the administration part of the application.</dd>
 
-app/controllers
-  Holds controllers that should be named like weblogs_controller.rb for
-  automated URL mapping. All controllers should descend from
-  ApplicationController which itself descends from ActionController::Base.
+  <dt>app/assets</dt>
+  <dd>Contains subdirectories for images, stylesheets, and JavaScript files.</dd>
 
-app/models
-  Holds models that should be named like post.rb. Models descend from
-  ActiveRecord::Base by default.
+  <dt>app/controllers</dt>
+  <dd>
+    Holds controllers that should be named like weblogs_controller.rb for
+    automated URL mapping. All controllers should descend from
+    ApplicationController which itself descends from ActionController::Base.
+  </dd>
 
-app/views
-  Holds the template files for the view that should be named like
-  weblogs/index.html.erb for the WeblogsController#index action. All views use
-  eRuby syntax by default.
+  <dt>app/models</dt>
+  <dd>
+    Holds models that should be named like post.rb. Models descend from
+    ActiveRecord::Base by default.
+  </dd>
 
-app/views/layouts
-  Holds the template files for layouts to be used with views. This models the
-  common header/footer method of wrapping views. In your views, define a layout
-  using the <tt>layout :default</tt> and create a file named default.html.erb.
-  Inside default.html.erb, call <% yield %> to render the view using this
-  layout.
+  <dt>app/views</dt>
+  <dd>
+    Holds the template files for the view that should be named like
+    weblogs/index.html.erb for the WeblogsController#index action.
+    All views use eRuby syntax by default.
+  </dd>
 
-app/helpers
-  Holds view helpers that should be named like weblogs_helper.rb. These are
-  generated for you automatically when using generators for controllers.
-  Helpers can be used to wrap functionality for your views into methods.
+  <dt>app/views/layouts</dt>
+  <dd>
+    Holds the template files for layouts to be used with views. This models the
+    common header/footer method of wrapping views. In your views, define a layout
+    using the <tt>layout :default</tt> and create a file named default.html.erb.
+    Inside default.html.erb, call <% yield %> to render the view using this
+    layout.
+  </dd>
 
-config
-  Configuration files for the Rails environment, the routing map, the database,
-  and other dependencies.
+  <dt>app/helpers</dt>
+  <dd>
+    Holds view helpers that should be named like weblogs_helper.rb. These are
+    generated for you automatically when using generators for controllers.
+    Helpers can be used to wrap functionality for your views into methods.
+  </dd>
 
-db
-  Contains the database schema in schema.rb. db/migrate contains all the
-  sequence of Migrations for your schema.
+  <dt>config</dt>
+  <dd>
+    Configuration files for the Rails environment, the routing map, the database,
+    and other dependencies.
+  </dd>
 
-doc
-  This directory is where your application documentation will be stored when
-  generated using <tt>rake doc:app</tt>
+  <dt>db</dt>
+  <dd>
+    Contains the database schema in schema.rb. db/migrate contains all the
+    sequence of Migrations for your schema.
+  </dd>
 
-lib
-  Application specific libraries. Basically, any kind of custom code that
-  doesn't belong under controllers, models, or helpers. This directory is in
-  the load path.
+  <dt>doc</dt>
+  <dd>
+    This directory is where your application documentation will be stored when
+    generated using <tt>rake doc:app</tt>
+  </dd>
 
-public
-  The directory available for the web server. Also contains the dispatchers and the
-  default HTML files. This should be set as the DOCUMENT_ROOT of your web
-  server.
+  <dt>lib</dt>
+  <dd>
+    Application specific libraries. Basically, any kind of custom code that
+    doesn't belong under controllers, models, or helpers. This directory is in
+    the load path.
+  </dd>
 
-script
-  Helper scripts for automation and generation.
+  <dt>public</dt>
+  <dd>
+    The directory available for the web server. Also contains the dispatchers
+    and the default HTML files. This should be set as the DOCUMENT_ROOT of your
+    web server.
+  </dd>
 
-test
-  Unit and functional tests along with fixtures. When using the rails generate
-  command, template test files will be generated for you and placed in this
-  directory.
+  <dt>script</dt>
+  <dd>Helper scripts for automation and generation.</dd>
 
-vendor
-  External libraries that the application depends on. Also includes the plugins
-  subdirectory. If the app has frozen rails, those gems also go here, under
-  vendor/rails/. This directory is in the load path.
+  <dt>test</dt>
+  <dd>
+    Unit and functional tests along with fixtures. When using the rails generate
+    command, template test files will be generated for you and placed in this
+    directory.
+  </dd>
+
+  <dt>vendor</dt>
+  <dd>
+    External libraries that the application depends on. Also includes the plugins
+    subdirectory. If the app has frozen rails, those gems also go here, under
+    vendor/rails/. This directory is in the load path.
+  </dd>
