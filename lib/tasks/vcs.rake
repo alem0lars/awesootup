@@ -23,7 +23,7 @@ namespace :vcs do
   end
 
   desc "Push in github pages"
-  task :push_doc => [:commit_ghp] do
+  task :push_doc => [:commit_doc] do
     FileUtils.cd(Rails.root.join('doc')) do
       sh "git push origin gh-pages", :verbose => false
     end
