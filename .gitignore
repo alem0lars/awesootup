@@ -20,7 +20,9 @@
 /*.sublime-workspace
 
 # Documentation ignored in the master branch
+!/doc/src/**
 /doc/**
 
 # Ignore the yardoc generated files
 .yardoc
+
