@@ -16,14 +16,14 @@ namespace :vcs do
   end
 
   desc "Commit changes in the gh-pages branch"
-  task :commit_ghp => :environment do
+  task :commit_doc => :environment do
     FileUtils.cd(Rails.root.join('doc')) do
       Rake::Task['vcs:commit'].invoke rescue nil
     end
   end
 
   desc "Push in github pages"
-  task :push_ghp => [:commit_ghp] do
+  task :push_doc => [:commit_ghp] do
     FileUtils.cd(Rails.root.join('doc')) do
       sh "git push origin gh-pages", :verbose => false
     end
