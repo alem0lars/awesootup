@@ -1,11 +1,6 @@
 require 'highline/import'
 
 
-def get_starting_branch_name
-  `git rev-parse --abbrev-ref HEAD`
-end
-
-
 namespace :vcs do
 
   desc "Commit the changes"
@@ -21,27 +16,17 @@ namespace :vcs do
   end
 
   desc "Commit changes in the gh-pages branch"
-  task :commit_ghp do
-    starting_branch_name = get_starting_branch_name
-
-    begin
-      sh "git checkout gh-pages", :verbose => false
-      Rake::Task['vcs:commit'].invoke
-    rescue
-      nil
+  task :commit_ghp => :environment do
+    FileUtils.cd(Rails.root.join('doc')) do
+      Rake::Task['vcs:commit'].invoke rescue nil
     end
-
-    sh "git checkout #{starting_branch_name}"
   end
 
   desc "Push in github pages"
   task :push_ghp => [:commit_ghp] do
-    starting_branch_name = get_starting_branch_name
-
-    sh "git checkout gh-pages", :verbose => false
-    sh "git push origin gh-pages", :verbose => false
-
-    sh "git checkout #{starting_branch_name}"
+    FileUtils.cd(Rails.root.join('doc')) do
+      sh "git push origin gh-pages", :verbose => false
+    end
   end
 
 end
