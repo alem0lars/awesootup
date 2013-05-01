@@ -15,18 +15,28 @@ namespace :vcs do
     sh "git push origin master", :verbose => false
   end
 
-  desc "Commit changes in the gh-pages branch"
+  desc "Commit documentation changes to remote"
   task :commit_doc => :environment do
     FileUtils.cd(Rails.root.join('doc')) do
       Rake::Task['vcs:commit'].invoke rescue nil
     end
   end
 
-  desc "Push in github pages"
-  task :push_doc => [:commit_doc] do
+  desc "Pull documentation from remote"
+  task :pull_doc => [:commit_doc] do
     FileUtils.cd(Rails.root.join('doc')) do
-      sh "git push origin gh-pages", :verbose => false
+      sh("git pull origin gh-pages", :verbose => false) rescue nil
     end
   end
+
+  desc "Push documentation to remote"
+  task :push_doc => [:commit_doc] do
+    FileUtils.cd(Rails.root.join('doc')) do
+      sh("git push origin gh-pages", :verbose => false) rescue nil
+    end
+  end
+
+  desc "Synchronize documentation with remote"
+  task :sync_doc => [:pull_doc, :push_doc]
 
 end
