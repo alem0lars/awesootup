@@ -19,5 +19,9 @@
 /*.sublime-project
 /*.sublime-workspace
 
+# Ignore the documentation source files
+/doc/src
+
 # Ignore the yardoc generated files
 /.yardoc
+
