@@ -5,5 +5,5 @@ test: bundle exec rake test
 
 # == Editors ==================================================================
 
-sublt: sublime_text &
+sublt: sublime_text ".$(whoami)@$(hostname).sublime-project" &
 
