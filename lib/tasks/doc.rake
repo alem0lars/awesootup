@@ -1,6 +1,12 @@
 require 'yard'
 
 
+# Clear the doc:app task et al
+Rake::Task["doc:app"].clear
+Rake::Task["doc/app"].clear
+Rake::Task["doc/app/index.html"].clear
+
+
 APP_FILES = [
   'app/**/*.rb'
 ]
@@ -17,11 +23,6 @@ STATIC_FILES = [
   'doc/src/guides/**'
 ] << MAIN_FILE
 
-
-# Clear the doc:app task et al
-Rake::Task["doc:app"].clear
-Rake::Task["doc/app"].clear
-Rake::Task["doc/app/index.html"].clear
 
 namespace :doc do
 

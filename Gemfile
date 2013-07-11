@@ -36,11 +36,14 @@ group :assets do
 end
 
 group :test do
+  gem "sqlite3"
 end
 
 group :development do
   # Enable the debugger
   gem 'debugger'
+
+  gem 'foreman'
 end
 
 group :production do

@@ -68,10 +68,14 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    dotenv (0.8.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     fastercsv (1.5.5)
+    foreman (0.63.0)
+      dotenv (>= 0.7)
+      thor (>= 0.13.6)
     formtastic (2.2.1)
       actionpack (>= 3.0)
     foundation-icons-sass-rails (2.0.0)
@@ -157,6 +161,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.7)
     thor (0.18.0)
     tilt (1.3.6)
     treetop (1.4.12)
@@ -181,6 +186,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   debugger
+  foreman
   foundation-icons-sass-rails
   haml
   haml-rails
@@ -193,6 +199,7 @@ DEPENDENCIES
   redcarpet
   redis
   sass-rails (~> 3.2.3)
+  sqlite3
   uglifier (>= 1.0.3)
   yard
   zurb-foundation
