@@ -74,6 +74,9 @@ en:
   g_link_project_issues_title: 'Awesootup Issues'
   g_link_project_issues_url: 'https://github.com/alem0lars/awesootup/issues'
 
+  g_link_project_docs_title: 'Awesootup Documentation'
+  g_link_project_docs_url: 'https://projects.molarialessandro.info/awesootup'
+
   # >> == Donation =============================================================
 
   donation_title: 'Make a donation'

@@ -6,7 +6,7 @@ It is released under the GPLv3 license (see LICENSE.md)
 
 **Awesootup** is available under (http://awesootup.net)
 
-The documentation of the underlying website is under (http://alem0lars.github.com/awesootup)
+The documentation of the underlying website is under (http://projects.molarialessandro.info/awesootup)
 
 
 ## News
