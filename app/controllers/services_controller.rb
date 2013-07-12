@@ -1,10 +1,5 @@
 class ServicesController < ApplicationController
 
-  def index
-    @providers ||= omniauth_providers
-    @user_services = current_user.services
-  end
-
   def create
     current_service = Service.where(provider: omnihash[:provider], uid: omnihash[:uid]).first
 
@@ -65,10 +60,6 @@ class ServicesController < ApplicationController
 
     def omnihash
       request.env['omniauth.auth']
-    end
-
-    def omniauth_providers
-      (OmniAuth::Strategies.local_constants.map(&:downcase) - [:developer, :oauth, :oauth2]).map(&:to_s)
     end
 
     # @see ApplicationController#redirect_path

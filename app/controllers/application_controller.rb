@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_filter :contributors, :awesootup_features, :awesootup_news
+  before_filter :users, :awesootup_features, :awesootup_news
 
   before_filter :current_user
 
@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
 
   # { common queries
 
-  def contributors
-    @contributors = Contributor.all
+  def users
+    @users = User.all
   end
 
   def awesootup_features
