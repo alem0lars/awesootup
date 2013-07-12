@@ -14,7 +14,7 @@ class AwesootupModule < ActiveRecord::Base
 
   attr_accessible :name, :desc
 
-  belongs_to :author
+  belongs_to :user
 
   has_and_belongs_to_many :provides,
       :class_name => 'AwesootupModuleFeature',
