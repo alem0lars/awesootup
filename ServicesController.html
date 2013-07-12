@@ -184,28 +184,6 @@
 </li>
 
       
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#index-instance_method" title="#index (instance method)">- (Object) <strong>index</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
     </ul>
   
 
@@ -219,7 +197,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ApplicationController.html#awesootup_features-instance_method" title="ApplicationController#awesootup_features (method)">#awesootup_features</a></span>, <span class='object_link'><a href="ApplicationController.html#awesootup_news-instance_method" title="ApplicationController#awesootup_news (method)">#awesootup_news</a></span>, <span class='object_link'><a href="ApplicationController.html#contributors-instance_method" title="ApplicationController#contributors (method)">#contributors</a></span>, <span class='object_link'><a href="ApplicationController.html#render_404-instance_method" title="ApplicationController#render_404 (method)">#render_404</a></span>, <span class='object_link'><a href="ApplicationController.html#render_500-instance_method" title="ApplicationController#render_500 (method)">#render_500</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="ApplicationController.html#awesootup_features-instance_method" title="ApplicationController#awesootup_features (method)">#awesootup_features</a></span>, <span class='object_link'><a href="ApplicationController.html#awesootup_news-instance_method" title="ApplicationController#awesootup_news (method)">#awesootup_news</a></span>, <span class='object_link'><a href="ApplicationController.html#render_404-instance_method" title="ApplicationController#render_404 (method)">#render_404</a></span>, <span class='object_link'><a href="ApplicationController.html#render_500-instance_method" title="ApplicationController#render_500 (method)">#render_500</a></span>, <span class='object_link'><a href="ApplicationController.html#users-instance_method" title="ApplicationController#users (method)">#users</a></span></p>
 
   
 
@@ -242,6 +220,11 @@
       <pre class="lines">
 
 
+3
+4
+5
+6
+7
 8
 9
 10
@@ -278,15 +261,10 @@
 41
 42
 43
-44
-45
-46
-47
-48
-49</pre>
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 3</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
   <span class='id identifier rubyid_current_service'>current_service</span> <span class='op'>=</span> <span class='const'>Service</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='label'>provider:</span> <span class='id identifier rubyid_omnihash'>omnihash</span><span class='lbracket'>[</span><span class='symbol'>:provider</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>uid:</span> <span class='id identifier rubyid_omnihash'>omnihash</span><span class='lbracket'>[</span><span class='symbol'>:uid</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
@@ -350,16 +328,16 @@
       <pre class="lines">
 
 
+46
+47
+48
+49
+50
 51
-52
-53
-54
-55
-56
-57</pre>
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 46</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
   <span class='id identifier rubyid_service'>service</span> <span class='op'>=</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_services'>services</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
@@ -388,49 +366,17 @@
       <pre class="lines">
 
 
-59
-60
-61
-62</pre>
+54
+55
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 54</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_failure'>failure</span>
   <span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>I18n</span><span class='period'>.</span><span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>g_auth_error</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
   <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_root_url'>root_url</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="index-instance_method">
-  
-    - (<tt>Object</tt>) <strong>index</strong> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-3
-4
-5
-6</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/services_controller.rb', line 3</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
-  <span class='ivar'>@providers</span> <span class='op'>||=</span> <span class='id identifier rubyid_omniauth_providers'>omniauth_providers</span>
-  <span class='ivar'>@user_services</span> <span class='op'>=</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_services'>services</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -442,7 +388,7 @@
 </div>
 
     <div id="footer">
-  Generated on Fri Jul 12 08:48:52 2013 by
+  Generated on Fri Jul 12 09:11:45 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>
