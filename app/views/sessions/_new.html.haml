@@ -1,0 +1,8 @@
+.row
+  .large-12.columns
+    - if logged_in?
+      %a.tiny.button.alert{ href: logout_path }= t('g_auth_logout')
+    - else
+      %a.tiny.button{ href: '/auth/github' }
+        %i.social.foundicon-github
+        %span= t('g_auth_login_github')

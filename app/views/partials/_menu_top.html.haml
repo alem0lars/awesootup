@@ -60,5 +60,11 @@
           %li= link_to(t('g_r_guides').titleize, contribute_path(:guides))
           %li= link_to(t('g_r_modules').titleize, contribute_path(:modules))
 
+      %li.has-dropdown
+        %a.social.foundicon-torso= " #{t('g_auth_title')}"
+        %ul.dropdown
+          %li= render 'sessions/new'
+
       %li
+        -# TODO
         = link_to " #{t('about_title')}", 'javascript:void(0)', :class => 'social foundicon-torso go-to-bottom trigger-click', :'data-trigger-click-target' => '#about-project-title'

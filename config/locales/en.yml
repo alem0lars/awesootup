@@ -77,6 +77,19 @@ en:
   g_link_project_docs_title: 'Awesootup Documentation'
   g_link_project_docs_url: 'https://projects.molarialessandro.info/awesootup'
 
+  # >> == Authentication =======================================================
+
+  g_auth_title: 'Authentication'
+  g_auth_logout: 'Log me out'
+  g_auth_login_github: 'Login with Github'
+
+  g_auth_error: 'Authentication error'
+  g_auth_account_created: 'Your account has been created and you have been logged in'
+
+  g_auth_provider_already_connected: 'Your account at %{provider} is already connected'
+  g_auth_provider_added: 'Your %{provider} account has been added for logging in'
+  g_auth_provider_unlinked: 'Your %{provider} account has been unlinked'
+
   # >> == Donation =============================================================
 
   donation_title: 'Make a donation'

@@ -9,12 +9,11 @@ Awesootup::Application.routes.draw do
   # }
 
   # { (regular) user authentication
-  #match '/auth/:service/callback' => 'services#create', via: [:get, :post]
-  #match '/auth/failure' => 'services#failure', via: [:get, :post]
-  #match '/logout' => 'sessions#destroy', via: [:get, :delete], as: :logout
+  match '/auth/:service/callback' => 'services#create', via: [:get, :post]
+  match '/auth/failure' => 'services#failure', via: [:get, :post]
+  match '/logout' => 'sessions#destroy', via: [:get, :delete], as: :logout
 
-  #resources :services, only: [:index, :create, :destroy]
-  #root to: "sessions#new"
+  resources :services, only: [:create, :destroy]
   # }
 
   # { resources
