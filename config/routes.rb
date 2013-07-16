@@ -1,13 +1,5 @@
 Awesootup::Application.routes.draw do
 
-  # { administration
-  ActiveAdmin.routes(self)
-  # }
-
-  # { admin user authentication
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  # }
-
   # { (regular) user authentication
   match '/auth/:service/callback' => 'services#create', via: [:get, :post]
   match '/auth/failure' => 'services#failure', via: [:get, :post]
@@ -27,10 +19,33 @@ Awesootup::Application.routes.draw do
   # by default show the full homepage
   root :to => 'homepages#show', name: 'full'
 
+  # { administration
+  ActiveAdmin.routes(self)
+  # }
+
+  # { admin user authentication
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  # }
+
 end
 #== Route Map
-# Generated on 16 Jul 2013 08:05
+# Generated on 16 Jul 2013 20:35
 #
+#                         auth_failure GET|POST   /auth/failure(.:format)                         services#failure
+#                               logout GET|DELETE /logout(.:format)                               sessions#destroy
+#                             services POST       /services(.:format)                             services#create
+#                              service DELETE     /services/:id(.:format)                         services#destroy
+#                             homepage GET        /homepages/:id(.:format)                        homepages#show
+#                           contribute GET        /contributes/:id(.:format)                      contributes#show
+#                    awesootup_modules GET        /awesootup_modules(.:format)                    awesootup_modules#index
+#                                      POST       /awesootup_modules(.:format)                    awesootup_modules#create
+#                 new_awesootup_module GET        /awesootup_modules/new(.:format)                awesootup_modules#new
+#                edit_awesootup_module GET        /awesootup_modules/:id/edit(.:format)           awesootup_modules#edit
+#                     awesootup_module GET        /awesootup_modules/:id(.:format)                awesootup_modules#show
+#                                      PUT        /awesootup_modules/:id(.:format)                awesootup_modules#update
+#                                      DELETE     /awesootup_modules/:id(.:format)                awesootup_modules#destroy
+#                                 root            /                                               homepages#show {:name=>"full"}
+#                           admin_root            /admin(.:format)                                admin/dashboard#index
 #                                 root            /                                               dashboard#index
 #         batch_action_admin_homepages POST       /admin/homepages/batch_action(.:format)         admin/homepages#batch_action
 #                      admin_homepages GET        /admin/homepages(.:format)                      admin/homepages#index
@@ -73,18 +88,3 @@ end
 #              new_admin_user_password GET        /admin/password/new(.:format)                   active_admin/devise/passwords#new
 #             edit_admin_user_password GET        /admin/password/edit(.:format)                  active_admin/devise/passwords#edit
 #                                      PUT        /admin/password(.:format)                       active_admin/devise/passwords#update
-#                                      GET|POST   /auth/:service/callback(.:format)               services#create
-#                         auth_failure GET|POST   /auth/failure(.:format)                         services#failure
-#                               logout GET|DELETE /logout(.:format)                               sessions#destroy
-#                             services POST       /services(.:format)                             services#create
-#                              service DELETE     /services/:id(.:format)                         services#destroy
-#                             homepage GET        /homepages/:id(.:format)                        homepages#show
-#                           contribute GET        /contributes/:id(.:format)                      contributes#show
-#                    awesootup_modules GET        /awesootup_modules(.:format)                    awesootup_modules#index
-#                                      POST       /awesootup_modules(.:format)                    awesootup_modules#create
-#                 new_awesootup_module GET        /awesootup_modules/new(.:format)                awesootup_modules#new
-#                edit_awesootup_module GET        /awesootup_modules/:id/edit(.:format)           awesootup_modules#edit
-#                     awesootup_module GET        /awesootup_modules/:id(.:format)                awesootup_modules#show
-#                                      PUT        /awesootup_modules/:id(.:format)                awesootup_modules#update
-#                                      DELETE     /awesootup_modules/:id(.:format)                awesootup_modules#destroy
-#                                 root            /                                               homepages#show {:name=>"full"}

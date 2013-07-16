@@ -34,15 +34,18 @@ gem 'monadic'
 
 # Gems used only for assets and not required in production envs by default
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'haml-rails'
-  gem 'uglifier', '>= 1.0.3'
-  gem 'zurb-foundation'
-  gem 'foundation-icons-sass-rails'
+  gem "sass-rails", "~> 3.2.3"
+  gem "coffee-rails", "~> 3.2.1"
+  gem "haml-rails"
+  gem "uglifier", ">= 1.0.3"
+  gem "zurb-foundation"
+  gem "foundation-icons-sass-rails"
 end
 
-group :test do
+group :development, :test do
+  gem "rspec-rails", "~> 2.0"
+  gem "rr", require: false
+  gem "capybara"
 end
 
 group :development do
@@ -53,17 +56,19 @@ group :development do
   gem 'annotate' # Sourcecode commenter
   gem 'libnotify' # Used to trigger OS notifications
   # { Guard (handle fs events) with plugins
-  gem 'guard'
-  gem 'guard-rails'
-  gem 'guard-bundler'
-  gem 'guard-brakeman'
-  gem 'guard-annotate'
-  gem 'guard-cane'
-  gem 'guard-migrate'
-  gem 'guard-rake'
+  gem "guard"
+  gem "guard-rails"
+  gem "guard-bundler"
+  gem "guard-brakeman"
+  gem "guard-annotate"
+  gem "guard-cane"
+  gem "guard-migrate"
+  gem "guard-rake"
+  gem "guard-livereload"
+  gem "guard-rspec"
   # }
   # { Pry (console) with plugins
-  gem 'pry-rails'
+  gem "pry-rails"
   gem "pry-coolline"
   gem "pry-remote-em"
   gem "pry-debugger"
@@ -73,11 +78,8 @@ group :development do
   # }
 end
 
-group :production do
-end
-
 group :doc do
-  gem 'yard'
-  gem 'redcarpet'
+  gem "yard"
+  gem "redcarpet"
 end
 

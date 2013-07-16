@@ -1,2 +1,22 @@
+/* == Variables overrides =================================================== */
+/* INF: available variables are under                                         */
+/*      `app/assets/stylesheets/active_admin/mixins/_variables.css.scss`      */
+
+// INF: Empty
+
+
+/* == Framework Imports ===================================================== */
+
 @import "active_admin/mixins";
 @import "active_admin/base";
+
+
+/* == Non-Variables overrides =============================================== */
+/* INF: Active Admin CSS rules are nested within a 'body.active_admin'        */
+/*      selector to prevent conflicts with other pages in the app             */
+/* INF: Namespaces conventions:                                               */
+/*      .active_admin     applies to any Active Admin namespace               */
+/*      .admin_namespace  applies to the admin namespace (/admin)             */
+/*      .other_namespace  applies to a custom namespace named other (/other)  */
+
+// INF: Empty

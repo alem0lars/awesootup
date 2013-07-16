@@ -66,6 +66,12 @@ GEM
     builder (3.0.4)
     cane (2.6.0)
       parallel
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -88,7 +94,11 @@ GEM
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       warden (~> 1.2.3)
+    diff-lcs (1.2.4)
     dotenv (0.8.0)
+    em-websocket (0.5.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
@@ -124,6 +134,10 @@ GEM
     guard-cane (0.1.2)
       cane
       guard
+    guard-livereload (1.4.0)
+      em-websocket (>= 0.5.0)
+      guard (>= 1.8.0)
+      multi_json (~> 1.7)
     guard-migrate (0.1.7)
       guard (>= 1.3.0)
     guard-rails (0.4.7)
@@ -131,6 +145,9 @@ GEM
     guard-rake (0.0.9)
       guard
       rake
+    guard-rspec (3.0.2)
+      guard (>= 1.8)
+      rspec (~> 2.13)
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -142,6 +159,7 @@ GEM
     hashie (2.0.5)
     highline (1.6.19)
     hike (1.2.3)
+    http_parser.rb (0.5.3)
     httpauth (0.2.0)
     i18n (0.6.1)
     inherited_resources (1.4.0)
@@ -175,9 +193,12 @@ GEM
       polyamorous (~> 0.5.0)
     method_source (0.8.1)
     mime-types (1.23)
+    mini_portile (0.5.1)
     monadic (0.7.4)
     multi_json (1.7.7)
     multipart-post (1.2.0)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -260,6 +281,22 @@ GEM
     redis (3.0.4)
     responders (0.9.3)
       railties (~> 3.1)
+    rr (1.1.1)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.3)
+    rspec-expectations (2.14.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.1)
+    rspec-rails (2.14.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
     ruby2ruby (2.0.6)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
@@ -293,6 +330,8 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.3)
       rack (>= 1.0)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
     yard (0.8.6.2)
     zurb-foundation (4.2.3)
       sass (>= 3.2.0)
@@ -307,6 +346,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   brakeman
   cane
+  capybara
   coffee-rails (~> 3.2.1)
   debugger
   foreman
@@ -316,9 +356,11 @@ DEPENDENCIES
   guard-brakeman
   guard-bundler
   guard-cane
+  guard-livereload
   guard-migrate
   guard-rails
   guard-rake
+  guard-rspec
   haml
   haml-rails
   highline
@@ -340,6 +382,8 @@ DEPENDENCIES
   rails (= 3.2.13)
   redcarpet
   redis
+  rr
+  rspec-rails (~> 2.0)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   yard
