@@ -108,7 +108,7 @@ guard :rspec do
   watch(%r{^app/controllers/(.+)_(controller)\.rb$}) { |m|
     [ "spec/routing/#{m[1]}_routing_spec.rb",
       "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb",
-      "spec/requests"
+      "spec/integration"
     ]
   }
 
@@ -116,7 +116,7 @@ guard :rspec do
   # run all controllers specs (every spec in `spec/controllers`)
   watch('app/controllers/application_controller.rb') {
     [ "spec/controllers",
-      "spec/requests"
+      "spec/integration"
     ]
   }
 
@@ -128,14 +128,14 @@ guard :rspec do
   # Run the corresponding spec when a view changes
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$}) { |m|
     [ "spec/views/#{m[1]}_spec.rb",
-      "spec/requests"
+      "spec/integration"
     ]
   }
 
   # Run the corresponding spec when a helper changes
   watch(%r{^app/helpers/(.+)_(helper)\.rb$}) { |m|
     [ "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb",
-      "spec/requests"
+      "spec/integration"
     ]
   }
 
