@@ -6,7 +6,7 @@ namespace :vcs do
   desc "Commit the changes"
   task :commit do
     sh "git add -A", :verbose => false
-    commit_msg = ask('Commit message? ') { |q| q.default = " " }
+    commit_msg = ask('Commit message? ') { |q| q.default = "Updated" }
     sh "git commit -m \"#{commit_msg}\"", :verbose => false
   end
 

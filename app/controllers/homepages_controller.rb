@@ -1,7 +1,8 @@
 class HomepagesController < ApplicationController
 
   def show
-    homepage_name = params[:name] or 'full'
+    entries = Dir.entries Rails.root.join('app', 'views', 'homepages', 'show')
+    homepage_name = entries.include?(params[:name]) ? params[:name] : 'full'
     render "homepages/show/#{homepage_name}"
   end
 

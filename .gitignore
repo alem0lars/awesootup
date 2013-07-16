@@ -26,3 +26,5 @@
 # Ignore the yardoc generated files
 .yardoc
 
+# Ignore the ctags
+/tags

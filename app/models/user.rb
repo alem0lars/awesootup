@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: users
+#
+# *id*::            <tt>integer, not null, primary key</tt>
+# *name*::          <tt>string(255)</tt>
+# *email*::         <tt>string(255)</tt>
+# *website*::       <tt>string(255)</tt>
+# *contribs_misc*:: <tt>string(255)</tt>
+# *created_at*::    <tt>datetime, not null</tt>
+# *updated_at*::    <tt>datetime, not null</tt>
+#--
+# == Schema Information End
+#++
+
 # A user is a member of awesootup
 # It is authenticated through `services` (using the `omniauth` gem)
 # It can be a contributor:

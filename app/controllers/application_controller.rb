@@ -79,7 +79,9 @@ class ApplicationController < ActionController::Base
 
     # @return [User] the current user logged in, or nil
     def current_user
-      @current_user ||= User.find(session[:user_id]) if session.has_key?(:user_id)
+      if session.has_key?(:user_id)
+        @current_user ||= User.find(session[:user_id])
+      end
     rescue ActiveRecord::RecordNotFound
       session[:user_id] = nil
     end
@@ -87,7 +89,8 @@ class ApplicationController < ActionController::Base
     # @return [Service] the service used by the current user to login, or nil
     def current_service
       if session.has_key?(:service_id)
-        @current_service ||= Service.where(user_id: session[:user_id], id: session[:service_id]).first
+        @current_service ||= Service.where(
+            user_id: session[:user_id], id: session[:service_id]).first
       end
     rescue ActiveRecord::RecordNotFound
       session[:service_id] = nil

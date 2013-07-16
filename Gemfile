@@ -29,6 +29,9 @@ gem 'meta_search', '>= 1.1.0.pre'
 gem 'omniauth'
 gem 'omniauth-github'
 
+# Use monads in ruby
+gem 'monadic'
+
 # Gems used only for assets and not required in production envs by default
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -40,14 +43,34 @@ group :assets do
 end
 
 group :test do
-  gem "sqlite3"
 end
 
 group :development do
-  # Enable the debugger
-  gem 'debugger'
-
-  gem 'foreman'
+  gem 'debugger' # Enable the debugger
+  gem 'foreman' # Processes management
+  gem 'brakeman', :require => false # Security scanner
+  gem 'cane' # Complexity analyzer
+  gem 'annotate' # Sourcecode commenter
+  gem 'libnotify' # Used to trigger OS notifications
+  # { Guard (handle fs events) with plugins
+  gem 'guard'
+  gem 'guard-rails'
+  gem 'guard-bundler'
+  gem 'guard-brakeman'
+  gem 'guard-annotate'
+  gem 'guard-cane'
+  gem 'guard-migrate'
+  gem 'guard-rake'
+  # }
+  # { Pry (console) with plugins
+  gem 'pry-rails'
+  gem "pry-coolline"
+  gem "pry-remote-em"
+  gem "pry-debugger"
+  gem "pry-stack_explorer"
+  gem "pry-exception_explorer"
+  gem "pry-vterm_aliases"
+  # }
 end
 
 group :production do
@@ -57,3 +80,4 @@ group :doc do
   gem 'yard'
   gem 'redcarpet'
 end
+

@@ -14,7 +14,8 @@ ActiveAdmin.register_page 'Translations' do
         # Delete the translation
         @translations.del("#{params[:locale]}.#{params[:key]}")
         # Show flash message
-        flash[:notice] = "Removed translation #{params[:key]} for locale #{params[:locale]}"
+        flash[:notice] = "Removed translation #{params[:key]} for " +
+            "locale #{params[:locale]}"
       elsif params[:locale] && params[:key] && params[:value]
         # Save the created translation
         I18n.backend.store_translations(
@@ -22,7 +23,8 @@ ActiveAdmin.register_page 'Translations' do
           :escape => false
         )
         # Show flash message
-        flash[:notice] = "Added translation #{params[:key]} for locale #{params[:locale]}"
+        flash[:notice] = "Added translation #{params[:key]} for " +
+            "locale #{params[:locale]}"
       end
 
     end

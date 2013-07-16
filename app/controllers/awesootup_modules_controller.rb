@@ -19,11 +19,13 @@ class AwesootupModulesController < ApplicationController
           end
         when :search
           if params[:search_value]
-            @awesootup_modules = AwesootupModule.search_simple(params[:search_value])
+            @awesootup_modules = AwesootupModule.search_simple(
+                params[:search_value])
           end
         when :deep_search
           if params[:search_value]
-            @awesootup_modules = AwesootupModule.search_deep(params[:search_value])
+            @awesootup_modules = AwesootupModule.search_deep(
+                params[:search_value])
           end
       end
     end

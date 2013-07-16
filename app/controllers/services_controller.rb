@@ -1,18 +1,21 @@
 class ServicesController < ApplicationController
 
   def create
-    current_service = Service.where(provider: omnihash[:provider], uid: omnihash[:uid]).first
+    current_service = Service.where(
+        provider: omnihash[:provider], uid: omnihash[:uid]).first
 
     if logged_in?
       if current_service
-        flash[:notice] = I18n.t('g_auth_provider_already_connected', provider: omnihash[:provider])
+        flash[:notice] = I18n.t(
+            'g_auth_provider_already_connected', provider: omnihash[:provider])
       else
         current_user.services.create!({
           provider: omnihash[:provider],
           uid: omnihash[:uid]
         })
 
-        flash[:notice] = I18n.t('g_auth_provider_added', provider: omnihash[:provider])
+        flash[:notice] = I18n.t(
+            'g_auth_provider_added', provider: omnihash[:provider])
       end
     else
       if current_service
@@ -46,7 +49,8 @@ class ServicesController < ApplicationController
   def destroy
     service = current_user.services.find(params[:id])
     if service.respond_to?(:destroy) and service.destroy
-      flash[:notice] = I18n.t('g_auth_provider_unlinked', provider: service.provider)
+      flash[:notice] = I18n.t(
+          'g_auth_provider_unlinked', provider: service.provider)
       redirect_to redirect_path
     end
   end

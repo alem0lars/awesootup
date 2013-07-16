@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: awesootup_modules
+#
+# *id*::         <tt>integer, not null, primary key</tt>
+# *name*::       <tt>string(255)</tt>
+# *desc*::       <tt>text</tt>
+# *author_id*::  <tt>integer</tt>
+# *created_at*:: <tt>datetime, not null</tt>
+# *updated_at*:: <tt>datetime, not null</tt>
+#--
+# == Schema Information End
+#++
+
 class AwesootupModule < ActiveRecord::Base
 
   include PgSearch
@@ -44,8 +58,12 @@ class AwesootupModule < ActiveRecord::Base
         nil # strict means that they have the same pre_reqs and post_reqs
             # (=> equal lengths)
       else
-        mod_pre_reqs_ids = mod.pre_reqs.collect { |mod_pre_req| mod_pre_req.id }
-        mod_post_reqs_ids = mod.post_reqs.collect { |mod_post_req| mod_post_req.id }
+        mod_pre_reqs_ids = mod.pre_reqs.collect do |mod_pre_req|
+          mod_pre_req.id
+        end
+        mod_post_reqs_ids = mod.post_reqs.collect do |mod_post_req|
+          mod_post_req.id
+        end
         pre_reqs_satisfied = true
         post_reqs_satisfied = true
 
