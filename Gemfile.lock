@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/bradphelan/jasminerice.git
+  revision: d93a3b2ed8f9b74249e2f19d179b5b1f1963dfc3
+  specs:
+    jasminerice (0.1.0)
+      coffee-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,8 +54,6 @@ GEM
     arel (3.0.2)
     awesome_print (1.1.0)
     bcrypt-ruby (3.0.1)
-    binding_of_caller (0.7.2)
-      debug_inspector (>= 0.0.1)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -72,6 +77,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -82,7 +89,6 @@ GEM
     coffee-script-source (1.6.3)
     columnize (0.3.6)
     coolline (0.4.2)
-    debug_inspector (0.0.2)
     debugger (1.6.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -139,6 +145,12 @@ GEM
     guard-cane (0.1.2)
       cane
       guard
+    guard-jasmine (1.17.0)
+      childprocess
+      guard (>= 1.1.0)
+      multi_json
+      thor
+      tilt
     guard-livereload (1.4.0)
       em-websocket (>= 0.5.0)
       guard (>= 1.8.0)
@@ -239,17 +251,12 @@ GEM
     pry-debugger (0.2.2)
       debugger (~> 1.3)
       pry (~> 0.9.10)
-    pry-exception_explorer (0.2.3)
-      pry-stack_explorer (>= 0.4.6)
     pry-rails (0.3.1)
       pry (>= 0.9.10)
     pry-remote-em (0.7.4)
       eventmachine
       highline
       pry (~> 0.9)
-    pry-stack_explorer (0.4.9)
-      binding_of_caller (>= 0.7)
-      pry (~> 0.9.11)
     pry-vterm_aliases (1.0.3)
       pry
     rack (1.4.5)
@@ -363,6 +370,7 @@ DEPENDENCIES
   guard-brakeman
   guard-bundler
   guard-cane
+  guard-jasmine
   guard-livereload
   guard-migrate
   guard-rails
@@ -371,6 +379,7 @@ DEPENDENCIES
   haml
   haml-rails
   highline
+  jasminerice!
   jquery-rails
   libnotify
   meta_search (>= 1.1.0.pre)
@@ -381,10 +390,8 @@ DEPENDENCIES
   pg_search
   pry-coolline
   pry-debugger
-  pry-exception_explorer
   pry-rails
   pry-remote-em
-  pry-stack_explorer
   pry-vterm_aliases
   rails (= 3.2.13)
   redcarpet
